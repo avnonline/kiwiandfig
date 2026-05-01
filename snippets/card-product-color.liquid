@@ -1,0 +1,96 @@
+{% liquid
+  assign variant_image = chosen_variant.featured_media | default: card_product.featured_media
+  assign variant_url = card_product.url | append: '?variant=' | append: chosen_variant.id
+
+  assign ratio = 1
+  if variant_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif variant_image and media_aspect_ratio == 'adapt'
+    assign ratio = variant_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == null
+    assign ratio = 1
+  endif
+%}
+
+<div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div
+    class="
+      card
+      card--{{ settings.card_style }}
+      {% if variant_image %} card--media{% else %} card--text{% endif %}
+      {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
+      {% if variant_image and settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
+      {% if extend_height %} card--extend-height{% endif %}
+    "
+    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+  >
+    <div
+      class="card__inner {% if image_shape and image_shape != 'default' %} card__inner--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}{% if variant_image or settings.card_style == 'standard' %} ratio{% endif %}"
+      {% if variant_image or settings.card_style == 'standard' %}
+        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      {% endif %}
+    >
+      {% if variant_image %}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            <a href="{{ variant_url }}" class="full-unstyled-link" aria-label="{{ card_product.title | escape }} - {{ color_value | escape }}">
+              {{
+                variant_image
+                | image_url: width: 900
+                | image_tag:
+                  widths: '165, 360, 533, 720, 900',
+                  sizes: '(min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)',
+                  alt: card_product.title,
+                  class: 'motion-reduce',
+                  loading: lazy_load | default: 'lazy'
+              }}
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="card__content">
+      <div class="card__information">
+        <h3 class="card__heading">
+          <a href="{{ variant_url }}" class="full-unstyled-link">
+            {{ card_product.title | escape }}
+          </a>
+        </h3>
+
+        {% if show_vendor %}
+          <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
+        {% endif %}
+
+        <div class="card-color-label">{{ color_value }}</div>
+
+        <div class="price">
+          <div class="price__container">
+            {% if chosen_variant.compare_at_price > chosen_variant.price %}
+              <div class="price__regular">
+                <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                <span class="price-item price-item--regular">
+                  {{ chosen_variant.compare_at_price | money }}
+                </span>
+              </div>
+              <div class="price__sale">
+                <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                <span class="price-item price-item--sale price-item--last">
+                  {{ chosen_variant.price | money }}
+                </span>
+              </div>
+            {% else %}
+              <div class="price__regular">
+                <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                <span class="price-item price-item--regular">
+                  {{ chosen_variant.price | money }}
+                </span>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

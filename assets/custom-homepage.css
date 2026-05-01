@@ -1,0 +1,44 @@
+/* Homepage hero buttons */
+.banner__buttons .button:first-child,
+.banner__buttons .button:first-child:focus,
+.banner__buttons .button:first-child:active {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.banner__buttons .button:first-child:hover {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #ffffff;
+  box-shadow: none;
+}
+
+.banner__buttons .button:first-child::before,
+.banner__buttons .button:first-child::after {
+  display: none;
+}
+
+.banner__buttons .button:nth-child(2),
+.banner__buttons .button:nth-child(2):focus,
+.banner__buttons .button:nth-child(2):active {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #ffffff;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.banner__buttons .button:nth-child(2):hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: none;
+}
+
+.banner__buttons .button:nth-child(2)::before,
+.banner__buttons .button:nth-child(2)::after {
+  display: none;
+}

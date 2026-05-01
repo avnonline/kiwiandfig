@@ -1,0 +1,111 @@
+/* =========================
+   CUSTOM NAVIGATION
+   Header, mega menu, drawer
+   ========================= */
+
+/* Hide desktop carets in top nav */
+@media screen and (min-width: 990px) {
+  .header__inline-menu .icon-caret {
+    display: none !important;
+  }
+}
+
+/* Mobile drawer promo */
+.menu-drawer__inner-submenu .menu-drawer__promo {
+  display: block;
+  width: 100%;
+  padding: 2rem 0 2.8rem;
+  margin-top: 1.8rem;
+  border-top: none;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-card {
+  display: block;
+  width: 100%;
+  color: rgb(var(--color-foreground)) !important;
+  text-decoration: none !important;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-card:hover,
+.menu-drawer__inner-submenu .menu-drawer__promo-card:focus,
+.menu-drawer__inner-submenu .menu-drawer__promo-card:visited {
+  color: rgb(var(--color-foreground)) !important;
+  text-decoration: none !important;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-image-wrap {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 1.8rem;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-copy {
+  display: block;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.2rem;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-eyebrow {
+  display: block;
+  color: rgba(var(--color-foreground), 0.58) !important;
+  text-decoration: none !important;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-title {
+  display: block;
+  color: rgb(var(--color-foreground)) !important;
+  text-decoration: none !important;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-text {
+  display: block;
+  color: rgba(var(--color-foreground), 0.72) !important;
+  text-decoration: none !important;
+}
+
+.menu-drawer__inner-submenu .menu-drawer__promo-link {
+  display: inline-block;
+  color: rgb(var(--color-foreground)) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.2rem;
+}
+
+/* Mobile refinements */
+@media screen and (max-width: 749px) {
+  .menu-drawer__inner-submenu .menu-drawer__promo {
+    padding-top: 1.8rem;
+    padding-bottom: 3.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .menu-drawer__inner-submenu .menu-drawer__promo-copy {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+/* Tablet and up */
+@media screen and (min-width: 750px) {
+  .menu-drawer__inner-submenu .menu-drawer__promo {
+    padding-bottom: 3.4rem;
+  }
+
+  .menu-drawer__inner-submenu .menu-drawer__promo-copy {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 1.4rem;
+  }
+}
