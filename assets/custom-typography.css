@@ -156,7 +156,7 @@ body,
   z-index: 5;
   display: block;
   pointer-events: auto;
-  background: rgba(0, 0, 0, 0.45);
+  background: #000000b8;
   padding: 1.2rem 2.2rem;
 }
 
