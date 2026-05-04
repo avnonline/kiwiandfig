@@ -72,11 +72,28 @@
             "promo_link": "shopify://products/corridor-bzr0047",
             "promo_link_label": "Shop now"
           }
+        },
+        "mega_menu_promo_nKcGxJ": {
+          "type": "mega_menu_promo",
+          "name": "MEN Mega menu module",
+          "settings": {
+            "target_menu": "MEN",
+            "layout_style": "standard",
+            "column_1_groups": "FEATURED",
+            "column_2_groups": "Clothing|Shoes",
+            "column_3_groups": "Grooming & Accessories|Home Objects",
+            "promo_eyebrow": "",
+            "promo_title": "",
+            "promo_text": "",
+            "promo_link": "",
+            "promo_link_label": "Shop now"
+          }
         }
       },
       "block_order": [
         "mega_menu_promo_bbRzUf",
-        "mega_menu_promo_FYxPQb"
+        "mega_menu_promo_FYxPQb",
+        "mega_menu_promo_nKcGxJ"
       ],
       "settings": {
         "logo_position": "middle-left",
