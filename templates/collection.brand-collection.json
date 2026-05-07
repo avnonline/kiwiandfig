@@ -12,7 +12,7 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_description": true,
+        "show_collection_description": false,
         "show_collection_image": true,
         "color_scheme": "scheme-1"
       }
@@ -36,10 +36,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_liquid_NbUriT": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{%- if collection.description != blank -%}\n  <div class=\"collection-description-wrapper page-width\" style=\"padding-top: 40px; padding-bottom: 60px;\">\n    <div class=\"rte\" style=\"max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.6;\">\n      <hr style=\"width: 100px; margin: 0 auto 30px; border: 0; border-top: 1px solid rgba(var(--color-foreground), 0.2);\">\n      {{ collection.description }}\n    </div>\n  </div>\n{%- endif -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "custom_liquid_NbUriT"
   ]
 }
