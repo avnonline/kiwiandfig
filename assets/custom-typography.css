@@ -142,8 +142,11 @@ body,
   letter-spacing: 0;
 }
 
-/* Collection overlay titles */
-.card__inner {
+
+/* ========================================================
+   OLD CODE: THE BLACK BOX OVERLAY (COMMENTED OUT) 
+   ======================================================== */
+/* .card__inner {
   position: relative;
   overflow: hidden;
 }
@@ -156,7 +159,7 @@ body,
   z-index: 5;
   display: block;
   pointer-events: auto;
-  background: #000000b8;
+  background: #000000b8; 
   padding: 1.2rem 2.2rem;
 }
 
@@ -164,7 +167,7 @@ body,
 .collection-card-overlay-title a:hover,
 .collection-card-overlay-title a:focus,
 .collection-card-overlay-title .full-unstyled-link {
-  color: #ffffff !important;
+  color: #ffffff !important; 
   font-family: "Libre Baskerville", serif !important;
   font-size: 1.85rem !important;
   font-weight: 400 !important;
@@ -173,7 +176,41 @@ body,
   text-decoration: none !important;
   position: relative;
   z-index: 6;
+} 
+*/
+
+
+/* ========================================================
+   NEW CODE: TEXT BELOW IMAGE (CLEAN LAYOUT)
+   ======================================================== */
+.card__inner {
+  position: relative;
+  overflow: hidden;
 }
+
+/* Positions the container under the image and removes the background box */
+.collection-card-overlay-title {
+  position: relative !important; /* Forces it to stop floating over the image */
+  display: block !important;
+  background: transparent !important;
+  padding: 1.5rem 0 0.5rem 0 !important; /* Adds top breathing room between image and text */
+  text-align: left !important; /* Ensures it lines up with the left edge of the photo */
+}
+
+/* Styles the text to be dark grey/black since it is now on a white background */
+.collection-card-overlay-title a,
+.collection-card-overlay-title a:hover,
+.collection-card-overlay-title a:focus,
+.collection-card-overlay-title .full-unstyled-link {
+  color: #111111 !important; 
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.85rem !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+}
+
 
 /* Product card titles */
 .card__heading,
