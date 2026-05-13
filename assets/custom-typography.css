@@ -117,4 +117,215 @@ body,
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 0.01em;
-  margin: 0
+  margin: 0 0 1.3rem;
+  color: rgba(var(--color-foreground), 0.72);
+}
+
+.menu-drawer__promo-link,
+.menu-drawer__inner-submenu .menu-drawer__promo-link {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.2rem;
+}
+
+/* Collection section titles (REVERTED TO ORIGINAL) */
+.collection .title,
+.collection .title-wrapper-with-link .title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.85rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+
+/* ========================================================
+   CATEGORY CARDS: TEXT BELOW IMAGE (CLEAN/LUXURY LAYOUT)
+   ======================================================== */
+.card__inner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Positions the container under the image and adds indentation */
+.collection-card-overlay-title {
+  position: relative !important; 
+  display: block !important;
+  background: transparent !important;
+  padding: 1.5rem 2rem 0.5rem 2rem !important; 
+  text-align: left !important; 
+}
+
+/* Styles the category text to be ALL CAPS, tracked out, and refined */
+.collection-card-overlay-title a,
+.collection-card-overlay-title a:hover,
+.collection-card-overlay-title a:focus,
+.collection-card-overlay-title .full-unstyled-link {
+  color: #111111 !important; 
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.3rem !important; 
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important; 
+  letter-spacing: 0.1em !important; 
+  text-decoration: none !important;
+}
+
+
+/* ========================================================
+   PRODUCT CARD REFINEMENTS (ORIGINAL STYLING)
+   ======================================================== */
+/* Product card titles */
+.card__heading,
+.card__heading a,
+.card-information .card__heading,
+.card-information .card__heading a {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+/* Product card prices */
+.card-information .price {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.card-information .price .price-item,
+.card-information .price .price-item--regular,
+.card-information .price .price-item--sale {
+  color: rgba(var(--color-foreground), 0.6);
+  line-height: inherit;
+}
+
+/* Announcement bar */
+.announcement-bar__message,
+.announcement-bar__message span,
+.announcement-bar__announcement span,
+.announcement-bar__link {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.08rem;
+}
+
+/* Product card color label */
+.card-color-label {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+/* Product page title */
+.product__title,
+.product__title h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+/* Product page prices */
+.price--large,
+.product .price,
+.product__info-container .price {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+/* Product body text */
+.product__text,
+.product__description,
+.product__description p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+/* Product accordion headings */
+.accordion summary,
+.product__accordion summary,
+.accordion__title,
+.product__accordion .summary__title {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* Variant labels */
+.product-form__input .form__label,
+.product-form__input legend,
+.variant-radios legend,
+.variant-selects label {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Variant values */
+.product-form__input input[type='radio'] + label,
+.product-form__input-value,
+.variant-radios label,
+.variant-selects select {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* Global buttons */
+.button,
+.shopify-payment-button__button,
+input[type="submit"] {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Desktop refinements */
+@media screen and (min-width: 990px) {
+  .mega-menu__promo-title {
+    font-size: 2.2rem;
+    line-height: 1.16;
+  }
+
+  .mega-menu__promo-text {
+    font-size: 1.45rem;
+    line-height: 1.65;
+  }
+
+  .mega-menu__promo-link {
+    font-size: 1.3rem;
+    line-height: 1.45;
+  }
+}
+
+/* Vertically center announcement bar text */
+.announcement-bar,
+.announcement-bar__announcement,
+.announcement-bar__link {
+  display: flex;
+  align-items: center !important;
+}
+
+.announcement-bar__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
