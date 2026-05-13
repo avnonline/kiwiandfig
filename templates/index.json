@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Spring Has Landed",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "button": {
@@ -105,7 +105,7 @@
           "type": "heading",
           "settings": {
             "heading": "Christine Alcalay Savourer Collection",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_MUDryU": {
@@ -143,7 +143,7 @@
         "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "show_text_below": false
       }
     },
@@ -214,8 +214,8 @@
       ],
       "name": "Brand Story",
       "settings": {
-        "image": "shopify://shop_images/CA_STORE_160_HIGH_RES-X4.jpg",
-        "height": "medium",
+        "image": "shopify://shop_images/fig-store-fronts.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -236,7 +236,7 @@
         "collection": "best-sellers",
         "products_to_show": 4,
         "title": "Most Wanted",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
