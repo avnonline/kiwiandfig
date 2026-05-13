@@ -76,6 +76,7 @@
           </div>
         </div>
 
+        {% comment %}
         <div class="collection-card-overlay-title">
           <a
             {% if card_collection == blank %}
@@ -92,6 +93,8 @@
             {%- endif -%}
           </a>
         </div>
+        {% endcomment %}
+        
       {%- endif -%}
 
       {%- if card_collection == blank -%}
@@ -99,21 +102,17 @@
           {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {%- endif -%}
-    </div>
-
-    {%- if card_collection == blank -%}
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading card__heading--placeholder">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">
-              {{ 'onboarding.collection_title' | t }}
-              <span class="icon-wrap">
-                {{- 'icon-arrow.svg' | inline_asset_content -}}
-              </span>
-            </a>
-          </h3>
-        </div>
-      </div>
-    {%- endif -%}
-  </div>
-</div>
+    </div> {%- if card_collection.featured_image -%}
+      <div class="collection-card-overlay-title">
+        <a
+          {% if card_collection == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ card_collection.url }}"
+          {% endif %}
+          class="full-unstyled-link"
+        >
+          {%- if card_collection.title != blank -%}
+            {{- card_collection.title | escape -}}
+          {%- else -%}
+            {{ 'onboarding.collection_title'
