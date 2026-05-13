@@ -22,17 +22,17 @@
         "text_UHMXcL": {
           "type": "text",
           "settings": {
-            "text": "the father's day edit",
+            "text": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
             "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP MEN",
+            "button_label_1": "SHOP THE EDIT",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
-            "button_label_2": "SHOP WOMEN",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -45,14 +45,14 @@
       ],
       "name": "Hero",
       "settings": {
-        "image": "shopify://shop_images/kiwi-fig-banner-03.png",
+        "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
         "show_text_below": false
