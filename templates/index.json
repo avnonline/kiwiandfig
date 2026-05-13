@@ -39,7 +39,7 @@
       "settings": {
         "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
@@ -98,8 +98,58 @@
         "padding_bottom": 24
       }
     },
+    "image_banner_7VzFHM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PGEK9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Christine Alcalay Savourer Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_MUDryU": {
+          "type": "text",
+          "settings": {
+            "text": "SPRING/SUMMER 2026",
+            "text_style": "body"
+          }
+        },
+        "buttons_CzJm3k": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/christine-alcalay",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PGEK9b",
+        "text_MUDryU",
+        "buttons_CzJm3k"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Screenshot_2026-02-24_at_1.13.39_PM.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
     "featured_collection_RVKHAP": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".title-wrapper-with-link {margin-bottom: 0.2rem !important;}",
         ".title-wrapper-with-link + * {margin-top: 0 !important;}"
@@ -246,6 +296,7 @@
   "order": [
     "image_banner",
     "collection_list_67NMmC",
+    "image_banner_7VzFHM",
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
     "featured_collection_zktXne",
