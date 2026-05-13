@@ -181,33 +181,35 @@ body,
 
 
 /* ========================================================
-   NEW CODE: TEXT BELOW IMAGE (CLEAN LAYOUT)
+   NEW CODE: TEXT BELOW IMAGE (CLEAN/LUXURY LAYOUT)
    ======================================================== */
 .card__inner {
   position: relative;
   overflow: hidden;
 }
 
-/* Positions the container under the image and removes the background box */
+/* Positions the container under the image and adds indentation */
 .collection-card-overlay-title {
-  position: relative !important; /* Forces it to stop floating over the image */
+  position: relative !important; 
   display: block !important;
   background: transparent !important;
-  padding: 1.5rem 0 0.5rem 0 !important; /* Adds top breathing room between image and text */
-  text-align: left !important; /* Ensures it lines up with the left edge of the photo */
+  /* 1.5rem top, 2rem right, 0.5rem bottom, 2rem left (This creates the indent!) */
+  padding: 1.5rem 2rem 0.5rem 2rem !important; 
+  text-align: left !important; 
 }
 
-/* Styles the text to be dark grey/black since it is now on a white background */
+/* Styles the text to be ALL CAPS, tracked out, and refined */
 .collection-card-overlay-title a,
 .collection-card-overlay-title a:hover,
 .collection-card-overlay-title a:focus,
 .collection-card-overlay-title .full-unstyled-link {
   color: #111111 !important; 
   font-family: "Libre Baskerville", serif !important;
-  font-size: 1.85rem !important;
+  font-size: 1.3rem !important; /* Shrunk down to offset the ALL CAPS weight */
   font-weight: 400 !important;
-  line-height: 1.1 !important;
-  letter-spacing: 0 !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important; /* Forces ALL CAPS */
+  letter-spacing: 0.1em !important; /* Wide, luxurious tracking */
   text-decoration: none !important;
 }
 
