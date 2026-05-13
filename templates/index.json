@@ -212,6 +212,9 @@
         "text_nmLmNT",
         "button_xntn39"
       ],
+      "custom_css": [
+        "img {object-fit: contain !important;}"
+      ],
       "name": "Brand Story",
       "settings": {
         "image": "shopify://shop_images/fig-store-fronts.jpg",
