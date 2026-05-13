@@ -105,14 +105,14 @@
           "type": "heading",
           "settings": {
             "heading": "Christine Alcalay Savourer Collection",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_MUDryU": {
           "type": "text",
           "settings": {
             "text": "SPRING/SUMMER 2026",
-            "text_style": "body"
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "buttons_CzJm3k": {
