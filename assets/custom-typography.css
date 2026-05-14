@@ -132,7 +132,7 @@ body,
   text-underline-offset: 0.2rem;
 }
 
-/* Collection section titles (REVERTED TO ORIGINAL) */
+/* Collection section titles */
 .collection .title,
 .collection .title-wrapper-with-link .title {
   font-family: "Libre Baskerville", serif;
@@ -151,13 +151,20 @@ body,
   overflow: hidden;
 }
 
-/* Positions the container under the image and adds indentation */
+/* Mobile Default: Less padding so the text isn't crushed */
 .collection-card-overlay-title {
   position: relative !important; 
   display: block !important;
   background: transparent !important;
-  padding: 1.5rem 2rem 0.5rem 2rem !important; 
+  padding: 1rem 1rem 0.5rem 1rem !important; /* 1rem sides so it doesn't touch the phone glass when images bleed */
   text-align: left !important; 
+}
+
+/* Desktop Override: Adds the deep luxury indent back */
+@media screen and (min-width: 750px) {
+  .collection-card-overlay-title {
+    padding: 1.5rem 2rem 0.5rem 2rem !important; 
+  }
 }
 
 /* Styles the category text to be ALL CAPS, tracked out, and refined */
@@ -294,6 +301,24 @@ input[type="submit"] {
   letter-spacing: 0.06em;
 }
 
+/* Vertically center announcement bar text */
+.announcement-bar,
+.announcement-bar__announcement,
+.announcement-bar__link {
+  display: flex;
+  align-items: center !important;
+}
+
+.announcement-bar__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
 /* Desktop refinements */
 @media screen and (min-width: 990px) {
   .mega-menu__promo-title {
@@ -312,20 +337,25 @@ input[type="submit"] {
   }
 }
 
-/* Vertically center announcement bar text */
-.announcement-bar,
-.announcement-bar__announcement,
-.announcement-bar__link {
-  display: flex;
-  align-items: center !important;
-}
-
-.announcement-bar__message {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 3.8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
+/* ========================================================
+   MOBILE FULL BLEED: COLLECTION LIST (CATEGORIES)
+   ======================================================== */
+@media screen and (max-width: 749px) {
+  /* Targets the generic page wrapper specifically around collection lists */
+  .collection-list-wrapper.page-width,
+  .collection-list-wrapper .page-width,
+  .shopify-section .collection-list-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* Forces the grid itself to stretch to the absolute edges */
+  .collection-list {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    column-gap: 1rem !important; /* Keeps a tiny gap between the two side-by-side images */
+  }
 }
