@@ -142,9 +142,9 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2026-02-24_at_1.13.39_PM.png",
+        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_33985fc2-388d-4e14-89e2-397b552da126.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
