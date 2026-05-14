@@ -156,7 +156,7 @@ body,
   position: relative !important; 
   display: block !important;
   background: transparent !important;
-  padding: 1rem 1rem 0.5rem 1rem !important; /* 1rem sides so it doesn't touch the phone glass when images bleed */
+  padding: 1rem 1rem 0.5rem 1rem !important; 
   text-align: left !important; 
 }
 
@@ -338,10 +338,10 @@ input[type="submit"] {
 }
 
 /* ========================================================
-   MOBILE FULL BLEED: COLLECTION LIST (CATEGORIES)
+   MOBILE FULL BLEED: FORCE 2-COLUMN GRID
    ======================================================== */
 @media screen and (max-width: 749px) {
-  /* Targets the generic page wrapper specifically around collection lists */
+  /* Remove outer bounds */
   .collection-list-wrapper.page-width,
   .collection-list-wrapper .page-width,
   .shopify-section .collection-list-wrapper {
@@ -350,12 +350,22 @@ input[type="submit"] {
     max-width: 100% !important;
   }
   
-  /* Forces the grid itself to stretch to the absolute edges */
+  /* Force exact 2-column split */
   .collection-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    column-gap: 1rem !important; /* Keeps a tiny gap between the two side-by-side images */
+    column-gap: 0.5rem !important; /* Small gap between the images */
+    row-gap: 1.5rem !important; /* Space between rows */
+  }
+
+  /* Ensure the cards respect the 50/50 split */
+  .collection-list .grid__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
   }
 }
