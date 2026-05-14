@@ -1,0 +1,32 @@
+/* Custom Dual Banner Editorial Styling */
+.dual-banner-refined .multicolumn-list {
+  column-gap: 15px !important;
+}
+
+.dual-banner-refined .multicolumn-card {
+  background: transparent !important;
+  border: none !important;
+}
+
+.dual-banner-refined .multicolumn-card__image-wrapper {
+  aspect-ratio: 2 / 3 !important;
+}
+
+.dual-banner-refined .multicolumn-card__image-wrapper img {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
+.dual-banner-refined .inline-richtext {
+  text-transform: uppercase !important;
+  letter-spacing: 0.15rem !important;
+  font-weight: 500 !important;
+  margin-top: 20px !important;
+}
+
+.dual-banner-refined .link {
+  text-transform: uppercase !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 0.1rem !important;
+  text-underline-offset: 5px !important;
+}
