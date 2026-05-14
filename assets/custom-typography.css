@@ -369,3 +369,48 @@ input[type="submit"] {
     margin: 0 !important;
   }
 }
+/* ========================================================
+   FOOTER REFINEMENTS (LUXURY 3-COLUMN LAYOUT - LIGHT BG)
+   ======================================================== */
+/* Footer Headings (Stay in Touch, Visit Us, Support) */
+.footer-block__heading {
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.8rem !important;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 2rem !important;
+  color: #111111 !important; /* Forces dark text */
+}
+
+/* Footer Body Text and Links */
+.footer-block__details-content,
+.footer-block__details-content p,
+.footer-block__details-content a,
+.footer-block .list-menu__item--link {
+  font-size: 1.25rem !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.8 !important; 
+  text-transform: uppercase !important; 
+  text-decoration: none !important;
+  color: #333333 !important; /* Soft, high-end dark grey */
+}
+
+/* Subtle hover effect for footer links */
+.footer-block .list-menu__item--link:hover {
+  opacity: 0.6;
+}
+
+/* Newsletter Input Styling (Dark borders for light background) */
+.footer .newsletter-form__field-wrapper .field__input {
+  background: transparent !important;
+  border: 1px solid rgba(17, 17, 17, 0.4) !important; /* Thin, elegant dark border */
+  border-radius: 0 !important; 
+  box-shadow: none !important;
+  color: #111111 !important;
+}
+
+/* Adjusts the arrow/submit button inside the newsletter box */
+.footer .newsletter-form__button {
+  color: #111111 !important;
+}
