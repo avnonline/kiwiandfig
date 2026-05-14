@@ -1,7 +1,6 @@
-/* =========================
-   TYPOGRAPHY FOUNDATION
-   Single source of truth
-   ========================= */
+/* ========================================================
+   1. TYPOGRAPHY FOUNDATION (Single Source of Truth)
+   ======================================================== */
 
 /* Body + utility copy */
 body,
@@ -51,6 +50,11 @@ body,
   letter-spacing: 0;
   text-transform: none;
 }
+
+
+/* ========================================================
+   2. PROMO BANNERS & MENU DRAWERS
+   ======================================================== */
 
 /* Mega menu promo */
 .mega-menu__promo-eyebrow {
@@ -132,6 +136,11 @@ body,
   text-underline-offset: 0.2rem;
 }
 
+
+/* ========================================================
+   3. CATEGORY CARDS (LUXURY LAYOUT)
+   ======================================================== */
+
 /* Collection section titles */
 .collection .title,
 .collection .title-wrapper-with-link .title {
@@ -142,10 +151,6 @@ body,
   letter-spacing: 0;
 }
 
-
-/* ========================================================
-   CATEGORY CARDS: TEXT BELOW IMAGE (CLEAN/LUXURY LAYOUT)
-   ======================================================== */
 .card__inner {
   position: relative;
   overflow: hidden;
@@ -184,7 +189,7 @@ body,
 
 
 /* ========================================================
-   PRODUCT CARD REFINEMENTS (ORIGINAL STYLING)
+   4. PRODUCT CARD & PAGE REFINEMENTS
    ======================================================== */
 
 /* Product card titles */
@@ -213,17 +218,6 @@ body,
 .card-information .price .price-item--sale {
   color: rgba(var(--color-foreground), 0.6);
   line-height: inherit;
-}
-
-/* Announcement bar */
-.announcement-bar__message,
-.announcement-bar__message span,
-.announcement-bar__announcement span,
-.announcement-bar__link {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: 0.08rem;
 }
 
 /* Product card color label */
@@ -302,7 +296,21 @@ input[type="submit"] {
   letter-spacing: 0.06em;
 }
 
-/* Vertically center announcement bar text */
+
+/* ========================================================
+   5. ANNOUNCEMENT BAR & DESKTOP MENU REFINEMENTS
+   ======================================================== */
+
+.announcement-bar__message,
+.announcement-bar__message span,
+.announcement-bar__announcement span,
+.announcement-bar__link {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.08rem;
+}
+
 .announcement-bar,
 .announcement-bar__announcement,
 .announcement-bar__link {
@@ -320,7 +328,7 @@ input[type="submit"] {
   margin: 0;
 }
 
-/* Desktop refinements */
+/* Desktop sizing overrides */
 @media screen and (min-width: 990px) {
   .mega-menu__promo-title {
     font-size: 2.2rem;
@@ -336,9 +344,11 @@ input[type="submit"] {
   }
 }
 
+
 /* ========================================================
-   MOBILE FULL BLEED: FORCE 2-COLUMN GRID
+   6. MOBILE FULL BLEED: FORCE 2-COLUMN GRID
    ======================================================== */
+
 @media screen and (max-width: 749px) {
   /* Remove outer bounds */
   .collection-list-wrapper.page-width,
@@ -368,17 +378,17 @@ input[type="submit"] {
 
 
 /* ========================================================
-   UNBREAKABLE FOOTER GRID & HIGH-END TYPOGRAPHY
+   7. UNBREAKABLE FOOTER GRID & HIGH-END TYPOGRAPHY
    ======================================================== */
 
-/* 1. Desktop Hard Grid Layout */
+/* Desktop Hard Grid Layout */
 @media screen and (min-width: 750px) {
   .footer__content-top {
     display: grid !important;
     grid-template-columns: 35% 60% !important; 
     justify-content: space-between !important;
     align-items: start !important;
-    padding: 0 5rem 8rem 5rem !important; /* The 8rem adds the requested padding above the dividing line */
+    padding: 0 5rem 8rem 5rem !important; /* Padding above the dividing line */
   }
 
   .footer-block--newsletter {
@@ -404,26 +414,39 @@ input[type="submit"] {
   }
 }
 
-/* 2. Mobile Stacked Layout */
+/* Mobile Compact Layout (Side-by-Side Links) */
 @media screen and (max-width: 749px) {
   .footer__content-top {
     display: flex !important;
     flex-direction: column !important;
-    padding: 0 2rem 6rem 2rem !important; /* Padding above line for mobile */
+    padding: 3rem 2rem 4rem 2rem !important; 
   }
-  .footer__blocks-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 4rem !important;
-    margin-top: 4rem !important;
-  }
+  
   .footer-block--newsletter {
     order: -1 !important; 
     width: 100% !important;
+    margin-bottom: 4rem !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; 
+  }
+  
+  .footer__blocks-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* Side-by-side Visit Us and Support */
+    column-gap: 2rem !important; 
+    row-gap: 3rem !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+  
+  .footer-block {
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 
-/* 3. Aggressive Typography Overrides (Failsafe Force Uppercase) */
+/* Aggressive Typography Overrides (Failsafe Force Uppercase) */
 .footer__content-top h2,
 .footer__content-top .h2,
 .footer-block__heading,
@@ -441,6 +464,14 @@ input[type="submit"] {
   color: #111111 !important;
   display: block !important;
   width: 100% !important;
+}
+
+/* Mobile specific heading tweak */
+@media screen and (max-width: 749px) {
+  .footer-block__heading {
+    font-size: 1.5rem !important; 
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 /* Body Text & Paragraphs */
@@ -474,7 +505,7 @@ input[type="submit"] {
   color: #333333 !important;
   margin-left: 0 !important;
   padding-top: 0 !important;
-  padding-bottom: 1rem !important; /* Perfects the gap between Support links */
+  padding-bottom: 1rem !important; 
   line-height: 1.2 !important;
   display: block !important;
 }
@@ -484,7 +515,7 @@ input[type="submit"] {
   margin-top: 3.5rem !important;
 }
 
-/* 4. Newsletter Box Perfection */
+/* Newsletter Box Perfection */
 .newsletter-form {
   justify-content: flex-start !important;
   align-items: flex-start !important;
@@ -514,12 +545,13 @@ input[type="submit"] {
 
 
 /* ========================================================
-   SUB-FOOTER (COPYRIGHT & POLICY LINKS BAR)
+   8. SUB-FOOTER (COPYRIGHT & POLICY LINKS BAR)
    ======================================================== */
+
 .footer__content-bottom {
   border-top: 1px solid rgba(17, 17, 17, 0.1) !important;
   padding-top: 3rem !important;
-  margin-top: 0 !important; /* Controlled by the content-top padding instead */
+  margin-top: 0 !important; 
 }
 
 .footer__content-bottom-wrapper {
