@@ -396,7 +396,6 @@ input[type="submit"] {
     padding-left: 6rem !important;
   }
 
-  /* Newsletter column width */
   .footer-block--newsletter {
     flex: 0 0 32% !important; 
     max-width: 350px !important;
@@ -488,4 +487,12 @@ input[type="submit"] {
 /* Subtle hover for bottom links */
 .footer__content-bottom .list-policies a:hover {
   color: #111111 !important;
+}
+
+/* THE POWERED-BY KILLER: 
+   This forces the "Powered by Shopify" text to disappear 
+   even if the theme tries to force it back on. */
+.copyright__content small, 
+.copyright__content a[href*="shopify.com"] {
+  display: none !important;
 }
