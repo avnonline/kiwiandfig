@@ -3,7 +3,6 @@
    Single source of truth
    ========================= */
 
-/* Body + utility copy */
 body,
 .text-body,
 .rte,
@@ -17,14 +16,12 @@ body,
   letter-spacing: 0;
 }
 
-/* Quiet links */
 .link,
 .customer a {
   font-size: 1.4rem;
   line-height: 1.4;
 }
 
-/* Top navigation */
 .header__menu-item,
 .header__menu-item span {
   font-size: 1.5rem;
@@ -32,7 +29,6 @@ body,
   letter-spacing: 0;
 }
 
-/* Mega menu grouped heads */
 .mega-menu__group-heading {
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
@@ -42,7 +38,6 @@ body,
   text-transform: uppercase;
 }
 
-/* Mega menu non-grouped first-level links */
 .mega-menu__list > li > .mega-menu__link--level-2:not(.mega-menu__group-heading) {
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
@@ -52,7 +47,6 @@ body,
   text-transform: none;
 }
 
-/* Mega menu promo */
 .mega-menu__promo-eyebrow {
   font-size: 1rem;
   line-height: 1.2;
@@ -90,7 +84,6 @@ body,
   text-underline-offset: 0.2rem;
 }
 
-/* Mobile drawer promo */
 .menu-drawer__promo-eyebrow,
 .menu-drawer__inner-submenu .menu-drawer__promo-eyebrow {
   font-size: 0.95rem;
@@ -132,7 +125,6 @@ body,
   text-underline-offset: 0.2rem;
 }
 
-/* Collection section titles */
 .collection .title,
 .collection .title-wrapper-with-link .title {
   font-family: "Libre Baskerville", serif;
@@ -151,7 +143,6 @@ body,
   overflow: hidden;
 }
 
-/* Mobile Default: Less padding so the text isn't crushed */
 .collection-card-overlay-title {
   position: relative !important; 
   display: block !important;
@@ -160,8 +151,324 @@ body,
   text-align: left !important; 
 }
 
-/* Desktop Override: Adds the deep luxury indent back */
 @media screen and (min-width: 750px) {
   .collection-card-overlay-title {
     padding: 1.5rem 2rem 0.5rem 2rem !important; 
   }
+}
+
+.collection-card-overlay-title a,
+.collection-card-overlay-title a:hover,
+.collection-card-overlay-title a:focus,
+.collection-card-overlay-title .full-unstyled-link {
+  color: #111111 !important; 
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.3rem !important; 
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important; 
+  letter-spacing: 0.1em !important; 
+  text-decoration: none !important;
+}
+
+
+/* ========================================================
+   PRODUCT CARD REFINEMENTS (ORIGINAL STYLING)
+   ======================================================== */
+.card__heading,
+.card__heading a,
+.card-information .card__heading,
+.card-information .card__heading a {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+.card-information .price {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.card-information .price .price-item,
+.card-information .price .price-item--regular,
+.card-information .price .price-item--sale {
+  color: rgba(var(--color-foreground), 0.6);
+  line-height: inherit;
+}
+
+.announcement-bar__message,
+.announcement-bar__message span,
+.announcement-bar__announcement span,
+.announcement-bar__link {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.08rem;
+}
+
+.card-color-label {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.product__title,
+.product__title h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.price--large,
+.product .price,
+.product__info-container .price {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.product__text,
+.product__description,
+.product__description p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.accordion summary,
+.product__accordion summary,
+.accordion__title,
+.product__accordion .summary__title {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.product-form__input .form__label,
+.product-form__input legend,
+.variant-radios legend,
+.variant-selects label {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-form__input input[type='radio'] + label,
+.product-form__input-value,
+.variant-radios label,
+.variant-selects select {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.button,
+.shopify-payment-button__button,
+input[type="submit"] {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.announcement-bar,
+.announcement-bar__announcement,
+.announcement-bar__link {
+  display: flex;
+  align-items: center !important;
+}
+
+.announcement-bar__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .mega-menu__promo-title {
+    font-size: 2.2rem;
+    line-height: 1.16;
+  }
+  .mega-menu__promo-text {
+    font-size: 1.45rem;
+    line-height: 1.65;
+  }
+  .mega-menu__promo-link {
+    font-size: 1.3rem;
+    line-height: 1.45;
+  }
+}
+
+
+/* ========================================================
+   MOBILE FULL BLEED: FORCE 2-COLUMN GRID
+   ======================================================== */
+@media screen and (max-width: 749px) {
+  .collection-list-wrapper.page-width,
+  .shopify-section .collection-list-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .collection-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 0.5rem !important;
+    row-gap: 1.5rem !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .collection-list .grid__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* ========================================================
+   SAFE, STABLE FOOTER REFINEMENTS
+   ======================================================== */
+
+/* Desktop Layout (Wide, Airy Columns) */
+@media screen and (min-width: 750px) {
+  .footer__content-top {
+    display: flex !important;
+    flex-direction: row-reverse !important; /* Puts Newsletter on left */
+    justify-content: space-between !important;
+    padding: 0 5rem !important;
+  }
+  
+  .footer__blocks-wrapper {
+    display: flex !important;
+    width: 60% !important; /* Forces right side to take up 60% of space */
+    justify-content: space-around !important; /* Spreads Visit Us and Support cleanly */
+  }
+
+  .footer-block--newsletter {
+    width: 35% !important; /* Gives Newsletter breathing room */
+  }
+}
+
+/* Mobile Layout (Stacked and Spaced) */
+@media screen and (max-width: 749px) {
+  .footer__content-top {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 2rem !important;
+  }
+  
+  .footer__blocks-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4rem !important;
+    margin-top: 4rem !important;
+  }
+
+  .footer-block--newsletter {
+    order: -1 !important; /* Forces Newsletter to the very top */
+    width: 100% !important;
+  }
+}
+
+/* Global Footer Alignment & Typography */
+
+/* Force all headers (Stay in Touch, Visit Us, Support) left */
+.footer-block__heading,
+.footer-block--newsletter .footer-block__heading,
+.footer-block__newsletter {
+  text-align: left !important;
+  margin-left: 0 !important;
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.8rem !important;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 2.5rem !important;
+  color: #111111 !important;
+}
+
+/* Force body text and links left */
+.footer-block__details-content,
+.footer-block__details-content p,
+.footer-block__details-content a,
+.footer .list-menu__item--link,
+.footer-block__details-content .rte {
+  text-align: left !important;
+  font-family: inherit !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.05em !important;
+  line-height: 2.2 !important; 
+  text-transform: uppercase !important; 
+  text-decoration: none !important;
+  color: #333333 !important;
+}
+
+/* Specific spacing for Store Hours */
+.footer-block__details-content p:nth-last-child(2) {
+  margin-top: 2.5rem !important;
+}
+
+/* Fix Newsletter Box Alignment */
+.newsletter-form {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+.footer .newsletter-form__field-wrapper .field__input {
+  background: transparent !important;
+  border: 1px solid rgba(17, 17, 17, 0.4) !important; 
+  border-radius: 0 !important; 
+  box-shadow: none !important;
+  color: #111111 !important;
+  font-size: 1.2rem !important;
+  padding-left: 1.5rem !important;
+}
+
+
+/* ========================================================
+   SUB-FOOTER (COPYRIGHT & POLICY LINKS BAR)
+   ======================================================== */
+.footer__content-bottom {
+  border-top: 1px solid rgba(17, 17, 17, 0.1) !important;
+  padding-top: 2.5rem !important;
+  margin-top: 4rem !important;
+}
+
+.footer__content-bottom-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 2.5rem !important;
+}
+
+.copyright__content,
+.copyright__content a,
+.footer__content-bottom .list-policies a {
+  font-size: 1.1rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: rgba(17, 17, 17, 0.5) !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+}
+
+/* Permanently hide Powered By Shopify */
+.copyright__content a[href*="shopify.com"] {
+  display: none !important;
+}
