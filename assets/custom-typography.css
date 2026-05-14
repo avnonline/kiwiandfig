@@ -376,7 +376,7 @@ input[type="submit"] {
    FOOTER REFINEMENTS (LUXURY 3-COLUMN LAYOUT - LIGHT BG)
    ======================================================== */
 
-/* 1. Force the 3-Column Layout on Desktop */
+/* 1. Force the 3-Column Layout on Desktop with Generous Padding */
 @media screen and (min-width: 750px) {
   .footer__content-top {
     display: flex !important;
@@ -388,15 +388,16 @@ input[type="submit"] {
   
   .footer__blocks-wrapper {
     display: flex !important;
-    width: 66% !important; /* Text and Menu take up 2/3 of the space */
-    justify-content: space-around !important;
+    flex: 1 !important; /* Takes up remaining space gracefully */
+    justify-content: space-evenly !important; /* Pushes Visit Us and Support apart cleanly */
+    padding-left: 6rem !important; /* Big gap between Newsletter and the middle column */
   }
 
   .footer-block--newsletter {
-    width: 33% !important; /* Newsletter takes up 1/3 of the space */
+    flex: 0 0 32% !important; /* Locks Newsletter width so it doesn't stretch */
     margin-top: 0 !important;
     text-align: left !important;
-    padding-right: 4rem !important;
+    padding-right: 4rem !important; /* Extra breathing room inside the left column */
   }
 
   /* Left-align the newsletter content */
@@ -416,7 +417,7 @@ input[type="submit"] {
   text-transform: uppercase !important;
   font-weight: 400 !important;
   letter-spacing: 0.05em !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 2.5rem !important; /* Pushed down slightly for more airy feel */
   color: #111111 !important; 
 }
 
@@ -430,8 +431,8 @@ input[type="submit"] {
   font-family: inherit !important;
   font-size: 1.25rem !important;
   letter-spacing: 0.05em !important;
-  line-height: 2 !important; 
-  text-transform: uppercase !important; /* Forces Order Tracking to ALL CAPS */
+  line-height: 2.2 !important; /* Increased line-height for a more spacious, relaxed look */
+  text-transform: uppercase !important; 
   text-decoration: none !important;
   color: #333333 !important; 
 }
@@ -450,6 +451,7 @@ input[type="submit"] {
   box-shadow: none !important;
   color: #111111 !important;
   font-size: 1.2rem !important;
+  padding-left: 1.5rem !important; /* Extra padding inside the email box */
 }
 
 /* Adjusts the arrow/submit button inside the newsletter box */
