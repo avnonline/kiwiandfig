@@ -15,17 +15,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Spring Has Landed",
-            "heading_size": "h0"
+            "heading": "It's His Day",
+            "heading_size": "h1"
+          }
+        },
+        "text_UHMXcL": {
+          "type": "text",
+          "settings": {
+            "text": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP MEN",
+            "button_label_1": "SHOP THE EDIT",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
-            "button_label_2": "SHOP WOMEN",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -33,18 +40,19 @@
       },
       "block_order": [
         "heading",
+        "text_UHMXcL",
         "button"
       ],
       "name": "Hero",
       "settings": {
-        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
+        "image_overlay_opacity": 10,
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
         "show_text_below": false
@@ -94,8 +102,8 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 44,
+        "padding_bottom": 44
       }
     },
     "image_banner_7VzFHM": {
@@ -112,7 +120,7 @@
           "type": "text",
           "settings": {
             "text": "SPRING/SUMMER 2026",
-            "text_style": "body"
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "buttons_CzJm3k": {
@@ -134,16 +142,16 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2026-02-24_at_1.13.39_PM.png",
+        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_33985fc2-388d-4e14-89e2-397b552da126.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "show_text_below": false
       }
     },
@@ -212,10 +220,13 @@
         "text_nmLmNT",
         "button_xntn39"
       ],
+      "custom_css": [
+        "img {object-fit: contain !important;}"
+      ],
       "name": "Brand Story",
       "settings": {
-        "image": "shopify://shop_images/CA_STORE_160_HIGH_RES-X4.jpg",
-        "height": "medium",
+        "image": "shopify://shop_images/fig-store-fronts.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -225,8 +236,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 84,
-        "padding_bottom": 84
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "featured_collection_zktXne": {
@@ -236,7 +247,7 @@
         "collection": "best-sellers",
         "products_to_show": 4,
         "title": "Most Wanted",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -254,8 +265,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "newsletter_wRDTBn": {
@@ -288,8 +299,8 @@
       "settings": {
         "color_scheme": "scheme-2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 84,
+        "padding_bottom": 84
       }
     }
   },
