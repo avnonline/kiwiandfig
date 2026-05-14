@@ -46,7 +46,7 @@
       "name": "Hero",
       "settings": {
         "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
