@@ -15,7 +15,10 @@ body,
   line-height: 1.5;
   letter-spacing: 0;
 }
-
+/* Mega menu non-serif sub-links */
+.mega-menu__link {
+  letter-spacing: 0.03em !important;
+}
 /* Quiet links */
 .link,
 .customer a {
@@ -28,7 +31,7 @@ body,
 .header__menu-item span {
   font-size: 1.5rem;
   line-height: 1.2;
-  letter-spacing: 0;
+  letter-spacing: 0.08;
 }
 
 /* Mega menu grouped heads */
