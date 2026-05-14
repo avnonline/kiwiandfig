@@ -165,25 +165,3 @@ body,
   .collection-card-overlay-title {
     padding: 1.5rem 2rem 0.5rem 2rem !important; 
   }
-}
-
-/* Styles the category text to be ALL CAPS, tracked out, and refined */
-.collection-card-overlay-title a,
-.collection-card-overlay-title a:hover,
-.collection-card-overlay-title a:focus,
-.collection-card-overlay-title .full-unstyled-link {
-  color: #111111 !important; 
-  font-family: "Libre Baskerville", serif !important;
-  font-size: 1.3rem !important; 
-  font-weight: 400 !important;
-  line-height: 1.2 !important;
-  text-transform: uppercase !important; 
-  letter-spacing: 0.1em !important; 
-  text-decoration: none !important;
-}
-
-
-/* ========================================================
-   PRODUCT CARD REFINEMENTS (ORIGINAL STYLING)
-   ======================================================== */
-/* Product card titles */
