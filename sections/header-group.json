@@ -51,7 +51,7 @@
             "promo_eyebrow": "S/S 2026",
             "promo_title": "Just In",
             "promo_text": "New arrivals for the warmer days ahead.",
-            "promo_link": "shopify://collections/all-new-arrivals",
+            "promo_link": "shopify://collections/mens-new-arrivals",
             "promo_link_label": "Shop now"
           }
         },
@@ -68,7 +68,7 @@
             "promo_eyebrow": "S/S 2026",
             "promo_title": "The Edit",
             "promo_text": "Vivid prints, soft structure, modern ease.",
-            "promo_link": "https://kiwiandfig.com/collections/womens-new-arrivals",
+            "promo_link": "shopify://collections/new-shop-all-women-s-clothing",
             "promo_link_label": "Shop Now"
           }
         },
@@ -85,7 +85,7 @@
             "promo_eyebrow": "S/S 2026",
             "promo_title": "Men's Shirts",
             "promo_text": "Relaxed texture, refined summer ease.",
-            "promo_link": "https://kiwiandfig.com/collections/mens-shirts",
+            "promo_link": "shopify://collections/new-men-s-shirts",
             "promo_link_label": "Shop Now"
           }
         }
