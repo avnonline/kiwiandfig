@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "heading": "VISIT US",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "subtext": "<p><strong>KIWI<br/></strong>119 Seventh Ave.Brooklyn, NY 11215<strong> </strong></p><p><strong>fig.<br/></strong>121 Seventh Ave.Brooklyn, NY 11215</p><p>Monday-Friday 11 - 7</p><p>Saturday & Sunday11 - 6</p>"
           }
         },
         "link_list_wL97hF": {
@@ -44,7 +44,7 @@
         "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 36
       }
     }
