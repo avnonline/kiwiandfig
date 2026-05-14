@@ -265,8 +265,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "newsletter_wRDTBn": {
@@ -295,6 +295,7 @@
         "paragraph_emgN79",
         "email_form_tJCHCJ"
       ],
+      "disabled": true,
       "name": "Mailing List",
       "settings": {
         "color_scheme": "scheme-2",
