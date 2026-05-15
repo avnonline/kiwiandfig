@@ -1,0 +1,48 @@
+{{ 'custom-dual-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-dual-banner-wrapper">
+  <div class="custom-dual-column">
+    <a href="{{ section.settings.link_1 }}" class="custom-dual-link">
+      <div class="custom-dual-image">
+        {% if section.settings.image_1 %}
+          {{ section.settings.image_1 | image_url: width: 800 | image_tag: loading: 'lazy' }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      <h2 class="custom-dual-title">{{ section.settings.title_1 }}</h2>
+    </a>
+  </div>
+  
+  <div class="custom-dual-column">
+    <a href="{{ section.settings.link_2 }}" class="custom-dual-link">
+      <div class="custom-dual-image">
+        {% if section.settings.image_2 %}
+          {{ section.settings.image_2 | image_url: width: 800 | image_tag: loading: 'lazy' }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      <h2 class="custom-dual-title">{{ section.settings.title_2 }}</h2>
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Dual Banner",
+  "settings": [
+    { "type": "image_picker", "id": "image_1", "label": "Left Image (KIWI)" },
+    { "type": "text", "id": "title_1", "label": "Left Title", "default": "KIWI / NEW ARRIVALS" },
+    { "type": "url", "id": "link_1", "label": "Left Link" },
+    { "type": "image_picker", "id": "image_2", "label": "Right Image (FIG)" },
+    { "type": "text", "id": "title_2", "label": "Right Title", "default": "FIG / BEST SELLERS" },
+    { "type": "url", "id": "link_2", "label": "Right Link" }
+  ],
+  "presets": [
+    {
+      "name": "Custom Dual Banner"
+    }
+  ]
+}
+{% endschema %}
