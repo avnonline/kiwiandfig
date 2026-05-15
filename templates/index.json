@@ -15,17 +15,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Spring Has Landed",
-            "heading_size": "h0"
+            "heading": "It's His Day",
+            "heading_size": "h1"
+          }
+        },
+        "text_UHMXcL": {
+          "type": "text",
+          "settings": {
+            "text": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP MEN",
+            "button_label_1": "SHOP THE EDIT",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
-            "button_label_2": "SHOP WOMEN",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -33,18 +40,19 @@
       },
       "block_order": [
         "heading",
+        "text_UHMXcL",
         "button"
       ],
       "name": "Hero",
       "settings": {
-        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
         "show_text_below": false
@@ -94,12 +102,62 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "image_banner_7VzFHM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PGEK9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Christine Alcalay Savourer Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_MUDryU": {
+          "type": "text",
+          "settings": {
+            "text": "SPRING/SUMMER 2026",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "buttons_CzJm3k": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/christine-alcalay",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PGEK9b",
+        "text_MUDryU",
+        "buttons_CzJm3k"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_33985fc2-388d-4e14-89e2-397b552da126.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "left",
+        "show_text_below": false
       }
     },
     "featured_collection_RVKHAP": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".title-wrapper-with-link {margin-bottom: 0.2rem !important;}",
         ".title-wrapper-with-link + * {margin-top: 0 !important;}"
@@ -162,10 +220,13 @@
         "text_nmLmNT",
         "button_xntn39"
       ],
+      "custom_css": [
+        "img {object-fit: contain !important;}"
+      ],
       "name": "Brand Story",
       "settings": {
-        "image": "shopify://shop_images/CA_STORE_160_HIGH_RES-X4.jpg",
-        "height": "medium",
+        "image": "shopify://shop_images/fig-store-fronts.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -175,8 +236,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 84,
-        "padding_bottom": 84
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "featured_collection_zktXne": {
@@ -186,7 +247,7 @@
         "collection": "best-sellers",
         "products_to_show": 4,
         "title": "Most Wanted",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -204,8 +265,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "newsletter_wRDTBn": {
@@ -234,18 +295,20 @@
         "paragraph_emgN79",
         "email_form_tJCHCJ"
       ],
+      "disabled": true,
       "name": "Mailing List",
       "settings": {
         "color_scheme": "scheme-2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 84,
+        "padding_bottom": 84
       }
     }
   },
   "order": [
     "image_banner",
     "collection_list_67NMmC",
+    "image_banner_7VzFHM",
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
     "featured_collection_zktXne",

@@ -1,0 +1,89 @@
+/* Custom Dual Banner - Layout Only (Theme handles typography) */
+.custom-dual-banner-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 60px 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.custom-dual-column {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+}
+
+.custom-dual-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.custom-dual-image {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.custom-dual-image img, 
+.custom-dual-image svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.custom-dual-link:hover .custom-dual-image img {
+  transform: scale(1.03);
+}
+
+/* Subtle overlay so white text stays readable */
+.custom-dual-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); 
+  pointer-events: none;
+}
+
+/* Center Content Group */
+.custom-dual-text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Ensure the heading defaults to white over images */
+.custom-dual-text-content .banner__heading {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .custom-dual-banner-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 15px;
+  }
+  .custom-dual-column {
+    max-width: 100%;
+  }
+}
