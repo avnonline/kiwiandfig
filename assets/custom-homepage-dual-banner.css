@@ -1,4 +1,4 @@
-/* Custom Dual Banner - Fully Isolated */
+/* Custom Dual Banner - Mini Banner Style */
 .custom-dual-banner-wrapper {
   display: flex;
   gap: 15px;
@@ -11,13 +11,14 @@
 .custom-dual-column {
   flex: 1;
   max-width: 50%;
+  position: relative;
 }
 
 .custom-dual-link {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  display: block;
   height: 100%;
+  position: relative;
 }
 
 .custom-dual-image {
@@ -25,7 +26,8 @@
   overflow: hidden;
   width: 100%;
   margin: 0;
-  background-color: #f4f4f4; /* Subtle placeholder background */
+  background-color: #f4f4f4;
+  position: relative;
 }
 
 .custom-dual-image img, 
@@ -38,17 +40,60 @@
 }
 
 .custom-dual-link:hover .custom-dual-image img {
-  transform: scale(1.03); /* Subtle editorial zoom */
+  transform: scale(1.03);
 }
 
+/* Gradient Overlay */
+.custom-dual-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+}
+
+/* Grouping the text together */
+.custom-dual-text-content {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between title and subtitle */
+}
+
+/* The Main Title */
 .custom-dual-title {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   font-weight: 500;
-  font-size: 1.6rem;
-  margin: 20px 0 0 0;
-  text-align: center;
-  color: #000;
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* The Subtitle (Looks like a sleek text link) */
+.custom-dual-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.custom-dual-link:hover .custom-dual-subtitle {
+  opacity: 1;
 }
 
 /* Mobile Stacking */
