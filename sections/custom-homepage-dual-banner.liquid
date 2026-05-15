@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ 'custom-homepage-dual-banner.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'custom-homepage-dual-banner.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'custom-dual-banner.css' | asset_url | stylesheet_tag }}
 
 <div class="custom-dual-banner-wrapper">
   <div class="custom-dual-column">
@@ -8,7 +7,7 @@
         {% if section.settings.image_1 %}
           {{ section.settings.image_1 | image_url: width: 800 | image_tag: loading: 'lazy' }}
         {% else %}
-          {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
       <h2 class="custom-dual-title">{{ section.settings.title_1 }}</h2>
@@ -21,7 +20,7 @@
         {% if section.settings.image_2 %}
           {{ section.settings.image_2 | image_url: width: 800 | image_tag: loading: 'lazy' }}
         {% else %}
-          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
       <h2 class="custom-dual-title">{{ section.settings.title_2 }}</h2>
