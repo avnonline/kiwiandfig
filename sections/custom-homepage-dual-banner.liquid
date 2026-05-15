@@ -11,12 +11,7 @@
           {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
-      <div class="custom-dual-text-content">
-        <h2 class="custom-dual-title">{{ section.settings.title_1 }}</h2>
-        {% if section.settings.subtitle_1 != blank %}
-          <span class="custom-dual-subtitle">{{ section.settings.subtitle_1 }}</span>
-        {% endif %}
-      </div>
+      <h2 class="custom-dual-title">{{ section.settings.title_1 }}</h2>
     </a>
   </div>
   
@@ -29,12 +24,7 @@
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
-      <div class="custom-dual-text-content">
-        <h2 class="custom-dual-title">{{ section.settings.title_2 }}</h2>
-        {% if section.settings.subtitle_2 != blank %}
-          <span class="custom-dual-subtitle">{{ section.settings.subtitle_2 }}</span>
-        {% endif %}
-      </div>
+      <h2 class="custom-dual-title">{{ section.settings.title_2 }}</h2>
     </a>
   </div>
 </div>
@@ -44,12 +34,10 @@
   "name": "Custom Dual Banner",
   "settings": [
     { "type": "image_picker", "id": "image_1", "label": "Left Image (KIWI)" },
-    { "type": "text", "id": "title_1", "label": "Left Title", "default": "NEW ARRIVALS" },
-    { "type": "text", "id": "subtitle_1", "label": "Left Subtitle", "default": "Shop Women's" },
+    { "type": "text", "id": "title_1", "label": "Left Title", "default": "KIWI / NEW ARRIVALS" },
     { "type": "url", "id": "link_1", "label": "Left Link" },
     { "type": "image_picker", "id": "image_2", "label": "Right Image (FIG)" },
-    { "type": "text", "id": "title_2", "label": "Right Title", "default": "BEST SELLERS" },
-    { "type": "text", "id": "subtitle_2", "label": "Right Subtitle", "default": "Shop Men's" },
+    { "type": "text", "id": "title_2", "label": "Right Title", "default": "FIG / BEST SELLERS" },
     { "type": "url", "id": "link_2", "label": "Right Link" }
   ],
   "presets": [
