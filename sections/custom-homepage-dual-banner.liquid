@@ -10,11 +10,13 @@
       </div>
       <div class="custom-dual-text-content">
         <h2 class="product__title">{{ section.settings.title_1 }}</h2>
+        
         {% if section.settings.subtitle_1 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_1 }}</p>
         {% endif %}
+        
         {% if section.settings.button_label_1 != blank %}
-          <span class="button">{{ section.settings.button_label_1 }}</span>
+          <span class="custom-dual-btn">{{ section.settings.button_label_1 }}</span>
         {% endif %}
       </div>
     </a>
@@ -31,11 +33,13 @@
       </div>
       <div class="custom-dual-text-content">
         <h2 class="product__title">{{ section.settings.title_2 }}</h2>
+        
         {% if section.settings.subtitle_2 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_2 }}</p>
         {% endif %}
+        
         {% if section.settings.button_label_2 != blank %}
-          <span class="button">{{ section.settings.button_label_2 }}</span>
+          <span class="custom-dual-btn">{{ section.settings.button_label_2 }}</span>
         {% endif %}
       </div>
     </a>
@@ -99,7 +103,7 @@
     pointer-events: none;
   }
   
-  /* Text and Button Positioning - EXACT INDENT MATCH */
+  /* Text and Button Positioning */
   .custom-dual-text-content {
     position: absolute;
     bottom: 0;
@@ -113,46 +117,41 @@
     padding: 5rem; 
   }
 
-  /* Inherits from custom-typography.css .product__title */
+  /* Title Style */
   .custom-dual-text-content .product__title {
-    color: #ffffff;
-    margin: 0 0 0.5rem 0; /* Very tight gap below title */
+    color: #ffffff !important;
+    margin: 0 0 0.5rem 0 !important; /* Tight gap below title */
     text-align: left;
   }
 
-  /* Secondary Copy (Subtitle) Match */
+  /* Subtitle Style */
   .custom-dual-subtitle {
     color: #ffffff;
-    font-size: 1rem; /* Sized down slightly */
+    font-size: 1rem; 
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin: 0 0 2.5rem 0; /* Gap before button */
+    margin: 0 0 2.5rem 0 !important; /* Gap before button */
     font-weight: 400;
   }
   
-  /* OUTLINE BUTTON STYLE */
-  .custom-dual-text-content .button {
-    background: transparent !important; /* Force transparent */
+  /* UNIQUE OUTLINE BUTTON STYLE */
+  .custom-dual-btn {
+    display: inline-block;
+    background: transparent !important; 
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
-    box-shadow: none !important;
     min-width: 15rem;
     padding: 1.2rem 3rem;
     transition: all 0.3s ease;
-    opacity: 1 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    font-size: 1.3rem;
   }
   
-  /* Kills Dawn's default drop shadows on buttons */
-  .custom-dual-text-content .button::before,
-  .custom-dual-text-content .button::after {
-    display: none !important;
-  }
-  
-  /* Very subtle hover so it remains an outline button */
-  .custom-dual-link:hover .button {
+  /* Subtle hover */
+  .custom-dual-link:hover .custom-dual-btn {
     background: rgba(255, 255, 255, 0.1) !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
   }
   
   /* Mobile Adjustments */
@@ -167,10 +166,10 @@
     }
     
     .custom-dual-text-content .product__title {
-      font-size: 2.2rem;
+      font-size: 2.2rem !important;
     }
     
-    .custom-dual-text-content .button {
+    .custom-dual-btn {
       min-width: 12rem;
       padding: 1rem 2rem;
       font-size: 1.2rem;
