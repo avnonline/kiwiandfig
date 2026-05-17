@@ -1,20 +1,19 @@
-<div class="custom-dual-banner-wrapper">
+<div class="custom-dual-banner-wrapper {% unless section.settings.show_second_banner %}custom-dual-banner-wrapper--single{% endunless %}">
+  
   <div class="custom-dual-column">
     <a href="{{ section.settings.link_1 }}" class="custom-dual-link">
       <div class="custom-dual-image">
         {% if section.settings.image_1 %}
-          {{ section.settings.image_1 | image_url: width: 1200 | image_tag: loading: 'lazy' }}
+          {{ section.settings.image_1 | image_url: width: 2400 | image_tag: loading: 'lazy' }}
         {% else %}
           {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
       <div class="custom-dual-text-content">
         <h2 class="product__title">{{ section.settings.title_1 }}</h2>
-        
         {% if section.settings.subtitle_1 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_1 }}</p>
         {% endif %}
-        
         {% if section.settings.button_label_1 != blank %}
           <span class="custom-dual-btn">{{ section.settings.button_label_1 }}</span>
         {% endif %}
@@ -22,6 +21,7 @@
     </a>
   </div>
   
+  {% if section.settings.show_second_banner %}
   <div class="custom-dual-column">
     <a href="{{ section.settings.link_2 }}" class="custom-dual-link">
       <div class="custom-dual-image">
@@ -33,17 +33,17 @@
       </div>
       <div class="custom-dual-text-content">
         <h2 class="product__title">{{ section.settings.title_2 }}</h2>
-        
         {% if section.settings.subtitle_2 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_2 }}</p>
         {% endif %}
-        
         {% if section.settings.button_label_2 != blank %}
           <span class="custom-dual-btn">{{ section.settings.button_label_2 }}</span>
         {% endif %}
       </div>
     </a>
   </div>
+  {% endif %}
+
 </div>
 
 <style>
@@ -75,6 +75,14 @@
     width: 100%;
     height: 100%;
     aspect-ratio: 4/5; 
+  }
+  
+  /* Single Mode Desktop Aspect Ratio Adjustment 
+     (Doubles the width ratio to keep the height exactly the same) */
+  @media screen and (min-width: 750px) {
+    .custom-dual-banner-wrapper--single .custom-dual-image {
+      aspect-ratio: 8/5; 
+    }
   }
   
   .custom-dual-image img,
@@ -120,7 +128,7 @@
   /* Title Style */
   .custom-dual-text-content .product__title {
     color: #ffffff !important;
-    margin: 0 0 0.8rem 0 !important; /* Tighter gap below title */
+    margin: 0 0 0.8rem 0 !important; 
     text-align: left;
     line-height: 1.1;
   }
@@ -131,14 +139,14 @@
     font-size: 1.1rem; 
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin: 0 0 2rem 0 !important; /* Measured gap before button */
+    margin: 0 0 2rem 0 !important; 
     font-weight: 500;
   }
   
   /* TRANSLUCENT BUTTON STYLE */
   .custom-dual-btn {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.18) !important; /* Exact match from your CSS */
+    background: rgba(255, 255, 255, 0.18) !important; 
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
     min-width: 15rem;
@@ -185,17 +193,26 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    { "type": "image_picker", "id": "image_1", "label": "Left Image" },
-    { "type": "text", "id": "title_1", "label": "Left Heading", "default": "WOMEN'S" },
-    { "type": "text", "id": "subtitle_1", "label": "Left Subtitle", "default": "EXPLORE THE LATEST" },
-    { "type": "text", "id": "button_label_1", "label": "Left Button Label", "default": "SHOP NOW" },
-    { "type": "url", "id": "link_1", "label": "Left Link" },
+    { 
+      "type": "checkbox", 
+      "id": "show_second_banner", 
+      "label": "Enable Side-by-Side (Two Banners)", 
+      "default": true,
+      "info": "Uncheck this to show only the first banner at full width."
+    },
+    { "type": "header", "content": "Left Banner (or Full Width)" },
+    { "type": "image_picker", "id": "image_1", "label": "Image" },
+    { "type": "text", "id": "title_1", "label": "Heading", "default": "WOMEN'S" },
+    { "type": "text", "id": "subtitle_1", "label": "Subtitle", "default": "EXPLORE THE LATEST" },
+    { "type": "text", "id": "button_label_1", "label": "Button Label", "default": "SHOP NOW" },
+    { "type": "url", "id": "link_1", "label": "Link" },
     
-    { "type": "image_picker", "id": "image_2", "label": "Right Image" },
-    { "type": "text", "id": "title_2", "label": "Right Heading", "default": "MEN'S" },
-    { "type": "text", "id": "subtitle_2", "label": "Right Subtitle", "default": "EXPLORE THE LATEST" },
-    { "type": "text", "id": "button_label_2", "label": "Right Button Label", "default": "SHOP NOW" },
-    { "type": "url", "id": "link_2", "label": "Right Link" }
+    { "type": "header", "content": "Right Banner" },
+    { "type": "image_picker", "id": "image_2", "label": "Image" },
+    { "type": "text", "id": "title_2", "label": "Heading", "default": "MEN'S" },
+    { "type": "text", "id": "subtitle_2", "label": "Subtitle", "default": "EXPLORE THE LATEST" },
+    { "type": "text", "id": "button_label_2", "label": "Button Label", "default": "SHOP NOW" },
+    { "type": "url", "id": "link_2", "label": "Link" }
   ],
   "presets": [
     {
