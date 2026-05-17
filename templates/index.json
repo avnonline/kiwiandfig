@@ -140,6 +140,7 @@
         "text_MUDryU",
         "buttons_CzJm3k"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_33985fc2-388d-4e14-89e2-397b552da126.jpg",
@@ -153,6 +154,22 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
         "show_text_below": false
+      }
+    },
+    "custom_homepage_dual_banner_NJa3zG": {
+      "type": "custom-homepage-dual-banner",
+      "name": "Side-by-Side Banner",
+      "settings": {
+        "image_1": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_08bc1a9e-91f6-4b14-9207-7dc3f4f66c96.jpg",
+        "title_1": "Christine Alcalay Savourer Collection",
+        "subtitle_1": "SPRING/SUMMER 2026",
+        "button_label_1": "SHOP NOW",
+        "link_1": "",
+        "image_2": "shopify://shop_images/klaviyo-fig-02_36191601-766a-4b2b-b2d2-3402a0785873.jpg",
+        "title_2": "MEN'S",
+        "subtitle_2": "EXPLORE THE LATEST",
+        "button_label_2": "SHOP NOW",
+        "link_2": ""
       }
     },
     "featured_collection_RVKHAP": {
@@ -303,31 +320,16 @@
         "padding_top": 84,
         "padding_bottom": 84
       }
-    },
-    "custom_homepage_dual_banner_NJa3zG": {
-      "type": "custom-homepage-dual-banner",
-      "name": "Side-by-Side Banner",
-      "settings": {
-        "image_1": "shopify://shop_images/klaviyo-CA-02_f920eda0-ce1d-4d04-9729-089efddfe3dd.jpg",
-        "title_1": "WOMEN'S",
-        "subtitle_1": "EXPLORE THE LATEST",
-        "button_label_1": "SHOP NOW",
-        "link_1": "",
-        "title_2": "MEN'S",
-        "subtitle_2": "EXPLORE THE LATEST",
-        "button_label_2": "SHOP NOW",
-        "link_2": ""
-      }
     }
   },
   "order": [
     "image_banner",
     "collection_list_67NMmC",
     "image_banner_7VzFHM",
+    "custom_homepage_dual_banner_NJa3zG",
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
     "featured_collection_zktXne",
-    "newsletter_wRDTBn",
-    "custom_homepage_dual_banner_NJa3zG"
+    "newsletter_wRDTBn"
   ]
 }
