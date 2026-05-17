@@ -303,6 +303,21 @@
         "padding_top": 84,
         "padding_bottom": 84
       }
+    },
+    "custom_homepage_dual_banner_NJa3zG": {
+      "type": "custom-homepage-dual-banner",
+      "name": "Side-by-Side Banner",
+      "settings": {
+        "image_1": "shopify://shop_images/klaviyo-CA-02_f920eda0-ce1d-4d04-9729-089efddfe3dd.jpg",
+        "title_1": "WOMEN'S",
+        "subtitle_1": "EXPLORE THE LATEST",
+        "button_label_1": "SHOP NOW",
+        "link_1": "",
+        "title_2": "MEN'S",
+        "subtitle_2": "EXPLORE THE LATEST",
+        "button_label_2": "SHOP NOW",
+        "link_2": ""
+      }
     }
   },
   "order": [
@@ -312,6 +327,7 @@
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
     "featured_collection_zktXne",
-    "newsletter_wRDTBn"
+    "newsletter_wRDTBn",
+    "custom_homepage_dual_banner_NJa3zG"
   ]
 }
