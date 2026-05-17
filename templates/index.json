@@ -9,56 +9,6 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "It's His Day",
-            "heading_size": "h1"
-          }
-        },
-        "text_UHMXcL": {
-          "type": "text",
-          "settings": {
-            "text": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP THE EDIT",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_UHMXcL",
-        "button"
-      ],
-      "disabled": true,
-      "name": "Hero",
-      "settings": {
-        "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
-        "image_overlay_opacity": 10,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "scheme-4",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
-        "show_text_below": false
-      }
-    },
     "custom_homepage_dual_banner_8fnL7W": {
       "type": "custom-homepage-dual-banner",
       "name": "Side-by-Side Banner",
@@ -253,51 +203,14 @@
         "padding_top": 20,
         "padding_bottom": 40
       }
-    },
-    "newsletter_wRDTBn": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_BNdHnE": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph_emgN79": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        },
-        "email_form_tJCHCJ": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_BNdHnE",
-        "paragraph_emgN79",
-        "email_form_tJCHCJ"
-      ],
-      "disabled": true,
-      "name": "Mailing List",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 84,
-        "padding_bottom": 84
-      }
     }
   },
   "order": [
-    "image_banner",
     "custom_homepage_dual_banner_8fnL7W",
     "collection_list_67NMmC",
     "custom_homepage_dual_banner_NJa3zG",
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
-    "featured_collection_zktXne",
-    "newsletter_wRDTBn"
+    "featured_collection_zktXne"
   ]
 }
