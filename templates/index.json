@@ -308,6 +308,7 @@
       "type": "custom-homepage-dual-banner",
       "name": "Side-by-Side Banner",
       "settings": {
+        "image_1": "shopify://shop_images/klaviyo-CA-02_f920eda0-ce1d-4d04-9729-089efddfe3dd.jpg",
         "title_1": "WOMEN'S",
         "subtitle_1": "EXPLORE THE LATEST",
         "button_label_1": "SHOP NOW",
