@@ -213,13 +213,13 @@
           "type": "heading",
           "settings": {
             "heading": "Shop Online, Pick Up In Store",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_nmLmNT": {
           "type": "text",
           "settings": {
-            "text": "<p>Easy and just in the nick of time. Get what you need when you need it. Simply select your shop at checkout, wait for your order confirmation, and pick-up in your local shop. Most orders are ready within twenty-four hours.</p><p></p><p></p><p><span style=\"text-decoration:underline\"><strong>KIWI & fig.<br/></strong></span>119/121 7th Avenue BKLYN 11215</p><p><a href=\"https://christinealcalay.com/\" title=\"https://christinealcalay.com\"><strong>Christine Alcalay Boutique</strong></a><br/>316 5th Avenue BKLYN NY 11215</p>",
+            "text": "<p>Easy and just in the nick of time. Get what you need when you need it. Simply select your shop at checkout, wait for your order confirmation, and pick-up in your local shop. Most orders are ready within a day.</p><p></p><p></p><p><span style=\"text-decoration:underline\"><strong>KIWI & fig.<br/></strong></span>119/121 7th Avenue BKLYN 11215</p><p><a href=\"https://christinealcalay.com/\" title=\"https://christinealcalay.com\"><strong>Christine Alcalay Boutique</strong></a><br/>316 5th Avenue BKLYN NY 11215</p>",
             "text_style": "body"
           }
         },
