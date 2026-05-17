@@ -1,20 +1,17 @@
-<link rel="stylesheet" href="{{ 'custom-homepage-dual-banner.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'custom-homepage-dual-banner.css' | asset_url | stylesheet_tag }}</noscript>
-
 <div class="custom-dual-banner-wrapper">
   <div class="custom-dual-column">
     <a href="{{ section.settings.link_1 }}" class="custom-dual-link">
       <div class="custom-dual-image">
         {% if section.settings.image_1 %}
-          {{ section.settings.image_1 | image_url: width: 800 | image_tag: loading: 'lazy' }}
+          {{ section.settings.image_1 | image_url: width: 1200 | image_tag: loading: 'lazy' }}
         {% else %}
           {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
       <div class="custom-dual-text-content">
-        <h2 class="banner__heading inline-richtext h1">{{ section.settings.title_1 }}</h2>
+        <h2 class="product__title">{{ section.settings.title_1 }}</h2>
         {% if section.settings.button_label_1 != blank %}
-          <span class="button button--primary">{{ section.settings.button_label_1 }}</span>
+          <span class="button">{{ section.settings.button_label_1 }}</span>
         {% endif %}
       </div>
     </a>
@@ -24,37 +21,165 @@
     <a href="{{ section.settings.link_2 }}" class="custom-dual-link">
       <div class="custom-dual-image">
         {% if section.settings.image_2 %}
-          {{ section.settings.image_2 | image_url: width: 800 | image_tag: loading: 'lazy' }}
+          {{ section.settings.image_2 | image_url: width: 1200 | image_tag: loading: 'lazy' }}
         {% else %}
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
       </div>
       <div class="custom-dual-text-content">
-        <h2 class="banner__heading inline-richtext h1">{{ section.settings.title_2 }}</h2>
+        <h2 class="product__title">{{ section.settings.title_2 }}</h2>
         {% if section.settings.button_label_2 != blank %}
-          <span class="button button--primary">{{ section.settings.button_label_2 }}</span>
+          <span class="button">{{ section.settings.button_label_2 }}</span>
         {% endif %}
       </div>
     </a>
   </div>
 </div>
 
+<style>
+  /* Base Layout */
+  .custom-dual-banner-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .custom-dual-column {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .custom-dual-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+  }
+  
+  /* Image Setup */
+  .custom-dual-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Standard portrait ratio to ensure uniformity */
+    aspect-ratio: 4/5; 
+  }
+  
+  .custom-dual-image img,
+  .custom-dual-image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+  }
+  
+  /* Zoom effect on hover */
+  .custom-dual-link:hover .custom-dual-image img {
+    transform: scale(1.05);
+  }
+  
+  /* Overlay Gradient for Text Readability */
+  .custom-dual-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%);
+    pointer-events: none;
+  }
+  
+  /* Text and Button Positioning */
+  .custom-dual-text-content {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+    padding: 0 2rem;
+  }
+  
+  /* Inherits from custom-typography.css .product__title but forces white */
+  .custom-dual-text-content .product__title {
+    color: #ffffff;
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+  
+  /* Custom Button styling overriding the default .button to match your custom homepage hero */
+  .custom-dual-text-content .button {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    min-width: 16rem;
+    padding: 1.2rem 3rem;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-dual-text-content .button::before,
+  .custom-dual-text-content .button::after {
+    display: none;
+  }
+  
+  .custom-dual-link:hover .button {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  /* Mobile Stacking to exactly match your full-bleed 2-column grid override */
+  @media screen and (max-width: 749px) {
+    .custom-dual-banner-wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .custom-dual-text-content {
+      bottom: 2rem;
+    }
+    
+    .custom-dual-text-content .product__title {
+      font-size: 2rem; /* Slight scale down for mobile */
+      margin-bottom: 1.5rem;
+    }
+    
+    .custom-dual-text-content .button {
+      min-width: 12rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
 {% schema %}
 {
-  "name": "Custom Dual Banner",
+  "name": "Side-by-Side Banner",
+  "tag": "section",
+  "class": "section",
   "settings": [
-    { "type": "image_picker", "id": "image_1", "label": "Left Image (KIWI)" },
-    { "type": "text", "id": "title_1", "label": "Left Title", "default": "NEW ARRIVALS" },
-    { "type": "text", "id": "button_label_1", "label": "Left Button", "default": "WOMEN'S" },
+    { "type": "image_picker", "id": "image_1", "label": "Left Image" },
+    { "type": "text", "id": "title_1", "label": "Left Heading", "default": "WOMEN'S" },
+    { "type": "text", "id": "button_label_1", "label": "Left Button Label", "default": "SHOP NOW" },
     { "type": "url", "id": "link_1", "label": "Left Link" },
-    { "type": "image_picker", "id": "image_2", "label": "Right Image (FIG)" },
-    { "type": "text", "id": "title_2", "label": "Right Title", "default": "BEST SELLERS" },
-    { "type": "text", "id": "button_label_2", "label": "Right Button", "default": "MEN'S" },
+    
+    { "type": "image_picker", "id": "image_2", "label": "Right Image" },
+    { "type": "text", "id": "title_2", "label": "Right Heading", "default": "MEN'S" },
+    { "type": "text", "id": "button_label_2", "label": "Right Button Label", "default": "SHOP NOW" },
     { "type": "url", "id": "link_2", "label": "Right Link" }
   ],
   "presets": [
     {
-      "name": "Custom Dual Banner"
+      "name": "Side-by-Side Banner"
     }
   ]
 }
