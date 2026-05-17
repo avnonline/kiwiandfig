@@ -9,10 +9,10 @@
         {% endif %}
       </div>
       <div class="custom-dual-text-content">
+        <h2 class="product__title">{{ section.settings.title_1 }}</h2>
         {% if section.settings.subtitle_1 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_1 }}</p>
         {% endif %}
-        <h2 class="product__title">{{ section.settings.title_1 }}</h2>
         {% if section.settings.button_label_1 != blank %}
           <span class="button">{{ section.settings.button_label_1 }}</span>
         {% endif %}
@@ -30,10 +30,10 @@
         {% endif %}
       </div>
       <div class="custom-dual-text-content">
+        <h2 class="product__title">{{ section.settings.title_2 }}</h2>
         {% if section.settings.subtitle_2 != blank %}
           <p class="custom-dual-subtitle">{{ section.settings.subtitle_2 }}</p>
         {% endif %}
-        <h2 class="product__title">{{ section.settings.title_2 }}</h2>
         {% if section.settings.button_label_2 != blank %}
           <span class="button">{{ section.settings.button_label_2 }}</span>
         {% endif %}
@@ -94,8 +94,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
     pointer-events: none;
   }
   
@@ -110,30 +110,30 @@
     align-items: flex-start; 
     justify-content: flex-end;
     z-index: 2;
-    padding: 5rem; /* Deep padding to match main banner */
+    padding: 5rem; 
+  }
+
+  /* Inherits from custom-typography.css .product__title */
+  .custom-dual-text-content .product__title {
+    color: #ffffff;
+    margin: 0 0 0.5rem 0; /* Very tight gap below title */
+    text-align: left;
   }
 
   /* Secondary Copy (Subtitle) Match */
   .custom-dual-subtitle {
     color: #ffffff;
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
+    font-size: 1rem; /* Sized down slightly */
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin: 0 0 1rem 0;
-    font-weight: 500;
+    margin: 0 0 2.5rem 0; /* Gap before button */
+    font-weight: 400;
   }
   
-  /* Inherits from custom-typography.css .product__title */
-  .custom-dual-text-content .product__title {
-    color: #ffffff;
-    margin: 0 0 2.5rem 0;
-    text-align: left;
-  }
-  
-  /* 1:1 Match of your Solid White Homepage Hero Button */
+  /* OUTLINE BUTTON STYLE */
   .custom-dual-text-content .button {
-    background: #ffffff !important;
-    color: #111111 !important;
+    background: transparent !important; /* Force transparent */
+    color: #ffffff !important;
     border: 1px solid #ffffff !important;
     box-shadow: none !important;
     min-width: 15rem;
@@ -148,9 +148,9 @@
     display: none !important;
   }
   
-  /* Hover State matching the inversion */
+  /* Very subtle hover so it remains an outline button */
   .custom-dual-link:hover .button {
-    background: rgba(255, 255, 255, 0.18) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
   }
@@ -163,12 +163,11 @@
     }
     
     .custom-dual-text-content {
-      padding: 3rem 2rem; /* Tighter padding for mobile */
+      padding: 3rem 2rem; 
     }
     
     .custom-dual-text-content .product__title {
       font-size: 2.2rem;
-      margin-bottom: 2rem;
     }
     
     .custom-dual-text-content .button {
@@ -186,14 +185,14 @@
   "class": "section",
   "settings": [
     { "type": "image_picker", "id": "image_1", "label": "Left Image" },
-    { "type": "text", "id": "subtitle_1", "label": "Left Subtitle", "default": "EXPLORE THE LATEST" },
     { "type": "text", "id": "title_1", "label": "Left Heading", "default": "WOMEN'S" },
+    { "type": "text", "id": "subtitle_1", "label": "Left Subtitle", "default": "EXPLORE THE LATEST" },
     { "type": "text", "id": "button_label_1", "label": "Left Button Label", "default": "SHOP NOW" },
     { "type": "url", "id": "link_1", "label": "Left Link" },
     
     { "type": "image_picker", "id": "image_2", "label": "Right Image" },
-    { "type": "text", "id": "subtitle_2", "label": "Right Subtitle", "default": "EXPLORE THE LATEST" },
     { "type": "text", "id": "title_2", "label": "Right Heading", "default": "MEN'S" },
+    { "type": "text", "id": "subtitle_2", "label": "Right Subtitle", "default": "EXPLORE THE LATEST" },
     { "type": "text", "id": "button_label_2", "label": "Right Button Label", "default": "SHOP NOW" },
     { "type": "url", "id": "link_2", "label": "Right Link" }
   ],
