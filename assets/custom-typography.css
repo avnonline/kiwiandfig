@@ -17,7 +17,7 @@ body,
 }
 /* Mega menu non-serif sub-links */
 .mega-menu__link {
-  letter-spacing: 0.03em !important;
+  letter-spacing: 0.06em !important;
 }
 /* Quiet links */
 .link,
@@ -29,9 +29,15 @@ body,
 /* Top navigation */
 .header__menu-item,
 .header__menu-item span {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.2;
-  letter-spacing: 0.08;
+  letter-spacing: 0.08em !important; /* Added the 'em' */
+}
+
+/* Tighter spacing between main menu items */
+.header__inline-menu .list-menu--inline .list-menu__item {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 /* Mega menu grouped heads */
@@ -581,4 +587,15 @@ input[type="submit"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
+}
+/* Main Hero Banner Subtitle (1:1 Match with Dual Banner) */
+.banner__text,
+.banner__text p,
+.banner__text.subtitle {
+  font-size: 1.1rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
