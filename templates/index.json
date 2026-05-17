@@ -304,50 +304,18 @@
         "padding_bottom": 84
       }
     },
-    "multicolumn_D8tGzq": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_3GBjDe": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/klaviyo-fig-02_49979a34-ccc6-444c-945e-e540f2f8ce24.jpg",
-            "title": "Column",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_BQQ4Ea": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/klaviyo-CA-02_cdc56afd-78c6-47e9-91be-273125f618fd.jpg",
-            "title": "This Is The Header",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_3GBjDe",
-        "column_BQQ4Ea"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
+    "custom_homepage_dual_banner_t8zzpU": {
+      "type": "custom-homepage-dual-banner",
+      "name": "Side-by-Side Banner",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_1": "shopify://shop_images/klaviyo-CA-02_f920eda0-ce1d-4d04-9729-089efddfe3dd.jpg",
+        "title_1": "WOMEN'S",
+        "button_label_1": "SHOP NOW",
+        "link_1": "",
+        "image_2": "shopify://shop_images/klaviyo-fig-02_36191601-766a-4b2b-b2d2-3402a0785873.jpg",
+        "title_2": "MEN'S",
+        "button_label_2": "SHOP NOW",
+        "link_2": ""
       }
     }
   },
@@ -359,6 +327,6 @@
     "image_with_text_wtcVgq",
     "featured_collection_zktXne",
     "newsletter_wRDTBn",
-    "multicolumn_D8tGzq"
+    "custom_homepage_dual_banner_t8zzpU"
   ]
 }
