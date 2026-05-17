@@ -120,24 +120,25 @@
   /* Title Style */
   .custom-dual-text-content .product__title {
     color: #ffffff !important;
-    margin: 0 0 0.5rem 0 !important; /* Tight gap below title */
+    margin: 0 0 0.8rem 0 !important; /* Tighter gap below title */
     text-align: left;
+    line-height: 1.1;
   }
 
   /* Subtitle Style */
   .custom-dual-subtitle {
     color: #ffffff;
-    font-size: 1rem; 
+    font-size: 1.1rem; 
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin: 0 0 2.5rem 0 !important; /* Gap before button */
-    font-weight: 400;
+    margin: 0 0 2rem 0 !important; /* Measured gap before button */
+    font-weight: 500;
   }
   
-  /* UNIQUE OUTLINE BUTTON STYLE */
+  /* TRANSLUCENT BUTTON STYLE */
   .custom-dual-btn {
     display: inline-block;
-    background: transparent !important; 
+    background: rgba(255, 255, 255, 0.18) !important; /* Exact match from your CSS */
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
     min-width: 15rem;
@@ -149,9 +150,10 @@
     font-size: 1.3rem;
   }
   
-  /* Subtle hover */
+  /* Solid hover state (inverts the button) */
   .custom-dual-link:hover .custom-dual-btn {
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: #ffffff !important;
+    color: #111111 !important;
   }
   
   /* Mobile Adjustments */
