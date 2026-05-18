@@ -9,53 +9,20 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "It's His Day",
-            "heading_size": "h1"
-          }
-        },
-        "text_UHMXcL": {
-          "type": "text",
-          "settings": {
-            "text": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP THE EDIT",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_UHMXcL",
-        "button"
-      ],
-      "name": "Hero",
+    "custom_homepage_dual_banner_8fnL7W": {
+      "type": "custom-homepage-dual-banner",
+      "name": "Side-by-Side Banner",
       "settings": {
-        "image": "shopify://shop_images/fig-fathers-day-banner-01_ec16e8d7-cf65-4389-bbe9-61b849c8d97b.png",
-        "image_overlay_opacity": 10,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "scheme-4",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
-        "show_text_below": false
+        "show_second_banner": false,
+        "image_1": "shopify://shop_images/fig-fathers-day-banner-01_8070a74e-711d-4d49-bf7f-0535ad9f695d.png",
+        "title_1": "It's His Day",
+        "subtitle_1": "THE DISCERNING CURATED FATHER'S DAY COLLECTION",
+        "button_label_1": "SHOP NOW",
+        "link_1": "",
+        "title_2": "MEN'S",
+        "subtitle_2": "EXPLORE THE LATEST",
+        "button_label_2": "SHOP NOW",
+        "link_2": ""
       }
     },
     "collection_list_67NMmC": {
@@ -106,67 +73,18 @@
         "padding_bottom": 20
       }
     },
-    "image_banner_7VzFHM": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_PGEK9b": {
-          "type": "heading",
-          "settings": {
-            "heading": "Christine Alcalay Savourer Collection",
-            "heading_size": "h1"
-          }
-        },
-        "text_MUDryU": {
-          "type": "text",
-          "settings": {
-            "text": "SPRING/SUMMER 2026",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
-        "buttons_CzJm3k": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify://collections/christine-alcalay",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_PGEK9b",
-        "text_MUDryU",
-        "buttons_CzJm3k"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_33985fc2-388d-4e14-89e2-397b552da126.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
-        "show_text_below": false
-      }
-    },
     "custom_homepage_dual_banner_NJa3zG": {
       "type": "custom-homepage-dual-banner",
       "name": "Side-by-Side Banner",
       "settings": {
+        "show_second_banner": true,
         "image_1": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_08bc1a9e-91f6-4b14-9207-7dc3f4f66c96.jpg",
         "title_1": "Christine Alcalay Savourer Collection",
         "subtitle_1": "SPRING/SUMMER 2026",
         "button_label_1": "SHOP NOW",
         "link_1": "",
-        "image_2": "shopify://shop_images/klaviyo-fig-02_36191601-766a-4b2b-b2d2-3402a0785873.jpg",
-        "title_2": "MEN'S",
+        "image_2": "shopify://shop_images/christine-alcalay-jackets-tilda-jacket-in-linen-blend-40539490484479_627b1a49-441f-49a6-8f0c-f65bdf410830.jpg",
+        "title_2": "This Is a Header",
         "subtitle_2": "EXPLORE THE LATEST",
         "button_label_2": "SHOP NOW",
         "link_2": ""
@@ -285,51 +203,14 @@
         "padding_top": 20,
         "padding_bottom": 40
       }
-    },
-    "newsletter_wRDTBn": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_BNdHnE": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph_emgN79": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        },
-        "email_form_tJCHCJ": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_BNdHnE",
-        "paragraph_emgN79",
-        "email_form_tJCHCJ"
-      ],
-      "disabled": true,
-      "name": "Mailing List",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 84,
-        "padding_bottom": 84
-      }
     }
   },
   "order": [
-    "image_banner",
+    "custom_homepage_dual_banner_8fnL7W",
     "collection_list_67NMmC",
-    "image_banner_7VzFHM",
     "custom_homepage_dual_banner_NJa3zG",
     "featured_collection_RVKHAP",
     "image_with_text_wtcVgq",
-    "featured_collection_zktXne",
-    "newsletter_wRDTBn"
+    "featured_collection_zktXne"
   ]
 }
