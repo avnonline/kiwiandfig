@@ -8,17 +8,18 @@ body,
 .rte,
 .product__description,
 .product__accordion .accordion__content,
-.card-color-label,
 .mega-menu__link,
 .mega-menu__promo-text {
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 0;
 }
+
 /* Mega menu non-serif sub-links */
 .mega-menu__link {
   letter-spacing: 0.06em !important;
 }
+
 /* Quiet links */
 .link,
 .customer a {
@@ -31,7 +32,7 @@ body,
 .header__menu-item span {
   font-size: 1.4rem;
   line-height: 1.2;
-  letter-spacing: 0.08em !important; /* Added the 'em' */
+  letter-spacing: 0.08em !important;
 }
 
 /* Tighter spacing between main menu items */
@@ -40,7 +41,7 @@ body,
   padding-right: 1rem !important;
 }
 
-/* Mega menu grouped heads */
+/* Mega menu grouped headings */
 .mega-menu__group-heading {
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
@@ -165,34 +166,34 @@ body,
   overflow: hidden;
 }
 
-/* Mobile Default: Less padding so the text isn't crushed */
+/* Mobile default: less padding so text isn't crushed */
 .collection-card-overlay-title {
-  position: relative !important; 
+  position: relative !important;
   display: block !important;
   background: transparent !important;
-  padding: 1rem 1rem 0.5rem 1rem !important; 
-  text-align: left !important; 
+  padding: 1rem 1rem 0.5rem 1rem !important;
+  text-align: left !important;
 }
 
-/* Desktop Override: Adds the deep luxury indent back */
+/* Desktop override: luxury indent */
 @media screen and (min-width: 750px) {
   .collection-card-overlay-title {
-    padding: 1.5rem 2rem 0.5rem 2rem !important; 
+    padding: 1.5rem 2rem 0.5rem 2rem !important;
   }
 }
 
-/* Styles the category text to be ALL CAPS, tracked out, and refined */
+/* Category text: all caps, tracked, refined */
 .collection-card-overlay-title a,
 .collection-card-overlay-title a:hover,
 .collection-card-overlay-title a:focus,
 .collection-card-overlay-title .full-unstyled-link {
-  color: #111111 !important; 
+  color: #111111 !important;
   font-family: "Libre Baskerville", serif !important;
-  font-size: 1.3rem !important; 
+  font-size: 1.3rem !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
-  text-transform: uppercase !important; 
-  letter-spacing: 0.1em !important; 
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
   text-decoration: none !important;
 }
 
@@ -229,7 +230,7 @@ body,
   line-height: inherit;
 }
 
-/* Product card color label */
+/* Product card color label â€” FIX: removed from body group above, correct size locked here */
 .card-color-label {
   font-size: 1.2rem;
   line-height: 1.3;
@@ -274,8 +275,7 @@ body,
   font-weight: 400;
 }
 
-/* Variant labels */
-.product-form__input .form__label,
+/* Variant labels â€” FIX: conflict resolved, custom-product.css values are authoritative for PDP controls */
 .product-form__input legend,
 .variant-radios legend,
 .variant-selects label {
@@ -366,18 +366,18 @@ input[type="submit"] {
     padding-right: 0 !important;
     max-width: 100% !important;
   }
-  
+
   /* Force exact 2-column split */
   .collection-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     column-gap: 0.5rem !important;
-    row-gap: 1.5rem !important; 
+    row-gap: 1.5rem !important;
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  /* Ensure the cards respect the 50/50 split */
+  /* Ensure cards respect 50/50 split */
   .collection-list .grid__item {
     width: 100% !important;
     max-width: 100% !important;
@@ -390,18 +390,18 @@ input[type="submit"] {
    7. UNBREAKABLE FOOTER GRID & HIGH-END TYPOGRAPHY
    ======================================================== */
 
-/* Desktop Hard Grid Layout */
+/* Desktop hard grid layout */
 @media screen and (min-width: 750px) {
   .footer__content-top {
     display: grid !important;
-    grid-template-columns: 35% 60% !important; 
+    grid-template-columns: 35% 60% !important;
     justify-content: space-between !important;
     align-items: start !important;
-    padding: 0 5rem 8rem 5rem !important; /* Padding above the dividing line */
+    padding: 0 5rem 8rem 5rem !important;
   }
 
   .footer-block--newsletter {
-    grid-column: 1 !important; 
+    grid-column: 1 !important;
     grid-row: 1 !important;
     width: 100% !important;
     max-width: 380px !important;
@@ -409,7 +409,7 @@ input[type="submit"] {
   }
 
   .footer__blocks-wrapper {
-    grid-column: 2 !important; 
+    grid-column: 2 !important;
     grid-row: 1 !important;
     display: flex !important;
     flex-direction: row !important;
@@ -423,39 +423,39 @@ input[type="submit"] {
   }
 }
 
-/* Mobile Compact Layout (Side-by-Side Links) */
+/* Mobile compact layout */
 @media screen and (max-width: 749px) {
   .footer__content-top {
     display: flex !important;
     flex-direction: column !important;
-    padding: 3rem 2rem 4rem 2rem !important; 
+    padding: 3rem 2rem 4rem 2rem !important;
   }
-  
+
   .footer-block--newsletter {
-    order: -1 !important; 
+    order: -1 !important;
     width: 100% !important;
-    margin-bottom: 4rem !important; 
+    margin-bottom: 4rem !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important; 
+    align-items: flex-start !important;
   }
-  
+
   .footer__blocks-wrapper {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* Side-by-side Visit Us and Support */
-    column-gap: 2rem !important; 
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 2rem !important;
     row-gap: 3rem !important;
     width: 100% !important;
     margin-top: 0 !important;
   }
-  
+
   .footer-block {
     width: 100% !important;
     margin: 0 !important;
   }
 }
 
-/* Aggressive Typography Overrides (Failsafe Force Uppercase) */
+/* Footer headings */
 .footer__content-top h2,
 .footer__content-top .h2,
 .footer-block__heading,
@@ -475,15 +475,15 @@ input[type="submit"] {
   width: 100% !important;
 }
 
-/* Mobile specific heading tweak */
+/* Mobile heading tweak */
 @media screen and (max-width: 749px) {
   .footer-block__heading {
-    font-size: 1.5rem !important; 
+    font-size: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
 }
 
-/* Body Text & Paragraphs */
+/* Footer body text */
 .footer-block__details-content,
 .footer-block__details-content p,
 .footer-block__details-content .rte,
@@ -492,14 +492,14 @@ input[type="submit"] {
   font-family: inherit !important;
   font-size: 1.25rem !important;
   letter-spacing: 0.05em !important;
-  line-height: 1.6 !important; 
-  text-transform: uppercase !important; 
+  line-height: 1.6 !important;
+  text-transform: uppercase !important;
   color: #333333 !important;
   margin-left: 0 !important;
   margin-bottom: 1.2rem !important;
 }
 
-/* High-End List & Link Control (The Line Spacing Fix) */
+/* Footer links */
 .footer-block__details-content ul,
 .footer-block__details-content li,
 .footer-block__details-content a,
@@ -509,22 +509,22 @@ input[type="submit"] {
   font-family: inherit !important;
   font-size: 1.25rem !important;
   letter-spacing: 0.05em !important;
-  text-transform: uppercase !important; 
+  text-transform: uppercase !important;
   text-decoration: none !important;
   color: #333333 !important;
   margin-left: 0 !important;
   padding-top: 0 !important;
-  padding-bottom: 1rem !important; 
+  padding-bottom: 1rem !important;
   line-height: 1.2 !important;
   display: block !important;
 }
 
-/* Create the targeted gap above the Store Hours */
+/* Gap above store hours */
 .footer-block__details-content p:nth-last-child(2) {
   margin-top: 3.5rem !important;
 }
 
-/* Newsletter Box Perfection */
+/* Newsletter form */
 .newsletter-form {
   justify-content: flex-start !important;
   align-items: flex-start !important;
@@ -540,14 +540,14 @@ input[type="submit"] {
 
 .footer .newsletter-form__field-wrapper .field__input {
   background: transparent !important;
-  border: 1px solid rgba(17, 17, 17, 0.4) !important; 
-  border-radius: 0 !important; 
+  border: 1px solid rgba(17, 17, 17, 0.4) !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
   color: #111111 !important;
-  font-family: var(--font-body-family), sans-serif !important; 
+  font-family: var(--font-body-family), sans-serif !important;
   font-size: 1.2rem !important;
   padding-left: 1.5rem !important;
-  text-transform: none !important; 
+  text-transform: none !important;
   height: 4.5rem !important;
   width: 100% !important;
 }
@@ -560,7 +560,7 @@ input[type="submit"] {
 .footer__content-bottom {
   border-top: 1px solid rgba(17, 17, 17, 0.1) !important;
   padding-top: 3rem !important;
-  margin-top: 0 !important; 
+  margin-top: 0 !important;
 }
 
 .footer__content-bottom-wrapper {
@@ -588,7 +588,8 @@ input[type="submit"] {
   visibility: hidden !important;
   opacity: 0 !important;
 }
-/* Main Hero Banner Subtitle (1:1 Match with Dual Banner) */
+
+/* Main hero banner subtitle (1:1 match with dual banner) â€” FIX: margins now !important to prevent Dawn override */
 .banner__text,
 .banner__text p,
 .banner__text.subtitle {
@@ -596,6 +597,6 @@ input[type="submit"] {
   letter-spacing: 0.15em !important;
   text-transform: uppercase !important;
   font-weight: 500 !important;
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
 }
