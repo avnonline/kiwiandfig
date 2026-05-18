@@ -10,7 +10,16 @@
   }
 }
 
-/* Mobile drawer promo */
+/* Tighten promo image-to-copy gap so image and text read as one editorial unit */
+.mega-menu__promo-image-wrap {
+  margin-bottom: 0.4rem !important;
+}
+
+
+/* =========================
+   MOBILE DRAWER PROMO
+   ========================= */
+
 .menu-drawer__inner-submenu .menu-drawer__promo {
   display: block;
   width: 100%;
@@ -37,7 +46,7 @@
   display: block;
   width: 100%;
   overflow: hidden;
-  margin: 0 0 1.8rem;
+  margin: 0 0 0.4rem;
   background: rgba(var(--color-foreground), 0.04);
 }
 
