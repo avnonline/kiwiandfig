@@ -69,8 +69,8 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 8,
+        "padding_bottom": 16
       }
     },
     "custom_homepage_dual_banner_NJa3zG": {
@@ -83,7 +83,7 @@
         "subtitle_1": "SPRING/SUMMER 2026",
         "button_label_1": "SHOP NOW",
         "link_1": "",
-        "image_2": "shopify://shop_images/25_7_Save_Khaki_Studio-1631_1728x_1e7200d5-c4ca-40f5-b849-e12f7043311f.webp",
+        "image_2": "shopify://shop_images/SU26-W1568-06-1447.webp",
         "title_2": "This Is a Header",
         "subtitle_2": "EXPLORE THE LATEST",
         "button_label_2": "SHOP NOW",
