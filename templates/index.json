@@ -37,19 +37,19 @@
         "featured_collection_3QCabt": {
           "type": "featured_collection",
           "settings": {
-            "collection": "agolde"
+            "collection": "karhu"
           }
         },
         "featured_collection_pd73Lg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "billy-reid"
+            "collection": "frank-eileen"
           }
         },
         "featured_collection_negBzL": {
           "type": "featured_collection",
           "settings": {
-            "collection": "mens-accessories"
+            "collection": "mens-shorts"
           }
         }
       },
@@ -78,12 +78,12 @@
       "name": "Side-by-Side Banner",
       "settings": {
         "show_second_banner": true,
-        "image_1": "shopify://shop_images/kiwi_fig-site-banner_0001_3_Shot7__0403_RET_08bc1a9e-91f6-4b14-9207-7dc3f4f66c96.jpg",
+        "image_1": "shopify://shop_images/CA-02.jpg",
         "title_1": "Christine Alcalay Savourer Collection",
         "subtitle_1": "SPRING/SUMMER 2026",
         "button_label_1": "SHOP NOW",
         "link_1": "",
-        "image_2": "shopify://shop_images/christine-alcalay-jackets-tilda-jacket-in-linen-blend-40539490484479_627b1a49-441f-49a6-8f0c-f65bdf410830.jpg",
+        "image_2": "shopify://shop_images/SU26-W1568-06-1447.webp",
         "title_2": "This Is a Header",
         "subtitle_2": "EXPLORE THE LATEST",
         "button_label_2": "SHOP NOW",
