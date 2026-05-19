@@ -177,6 +177,9 @@
     },
     "featured_collection_zktXne": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2.title.h0 {font-size: 1.85rem !important; font-weight: 400 !important; letter-spacing: 0 !important; font-family: \"Libre Baskerville\", serif !important;}"
+      ],
       "name": "Most Wanted",
       "settings": {
         "collection": "best-sellers",
