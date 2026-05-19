@@ -600,3 +600,36 @@ input[type="submit"] {
   margin-top: 0 !important;
   margin-bottom: 2rem !important;
 }
+
+
+/* ========================================================
+   9. HOMEPAGE SECTION HEADINGS
+   ======================================================== */
+
+/* Featured collection and product section headings â€” consistent scale, centered */
+.featured-collection .title,
+.featured-collection .title-wrapper-with-link .title,
+.collection-list .title,
+.collection-list .title-wrapper-with-link .title {
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.85rem !important;
+  font-weight: 400 !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+}
+
+/* Rich text / image with text section headings (Shop Online, Pick Up In Store) */
+.rich-text__heading,
+.image-with-text__heading {
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Category overlay label breathing room */
+.collection-card-overlay-title {
+  padding-top: 1.2rem !important;
+}
