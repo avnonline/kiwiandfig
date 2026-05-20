@@ -652,6 +652,10 @@ input[type="submit"] {
   text-transform: none !important;
   text-decoration: none !important;
 }
+.collection-card-overlay-title a:hover,
+.collection-card-overlay-title .full-unstyled-link:hover {
+  color: #ffffff !important;
+}
 
 @media screen and (max-width: 749px) {
   .collection-card-overlay-title {
