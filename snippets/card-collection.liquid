@@ -49,7 +49,7 @@
     >
       {%- if card_collection.featured_image -%}
         <div class="card__media">
-          <div class="media media--transparent media--hover-effect">
+          <div class="media media--transparent">
             <img
               srcset="
                 {%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -78,7 +78,7 @@
 
         {% comment %}
         <div class="collection-card-overlay-title">
-          <a
+          
             {% if card_collection == blank %}
               role="link" aria-disabled="true"
             {% else %}
@@ -103,22 +103,23 @@
         </div>
       {%- endif -%}
     </div> {%- if card_collection.featured_image -%}
-      <div class="collection-card-overlay-title">
-        <a
-          {% if card_collection == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ card_collection.url }}"
-          {% endif %}
-          class="full-unstyled-link"
-        >
+      
+        {% if card_collection == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ card_collection.url }}"
+        {% endif %}
+        class="collection-card-overlay full-unstyled-link"
+      >
+        <div class="collection-card-overlay__gradient"></div>
+        <div class="collection-card-overlay__text">
           {%- if card_collection.title != blank -%}
             {{- card_collection.title | escape -}}
           {%- else -%}
             {{ 'onboarding.collection_title' | t }}
           {%- endif -%}
-        </a>
-      </div>
+        </div>
+      </a>
     {%- endif -%}
     {%- if card_collection == blank -%}
       <div class="card__content">
