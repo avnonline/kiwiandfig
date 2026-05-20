@@ -321,3 +321,9 @@ variant-selects {
 .product__info-container .price {
   margin-bottom: 3rem !important;
 }
+/* Disable image zoom on hover */
+.card__media .media--hover-effect img,
+.card__media .media--hover-effect img:hover {
+  transform: none !important;
+  transition: none !important;
+}
