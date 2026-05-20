@@ -177,6 +177,7 @@
     },
     "featured_collection_zktXne": {
       "type": "featured-collection",
+      "custom_css": [],
       "name": "Most Wanted",
       "settings": {
         "collection": "best-sellers",
