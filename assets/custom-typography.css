@@ -655,6 +655,13 @@ input[type="submit"] {
 .collection-card-overlay-title a:hover,
 .collection-card-overlay-title .full-unstyled-link:hover {
   color: #ffffff !important;
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-decoration: none !important;
 }
 
 @media screen and (max-width: 749px) {
