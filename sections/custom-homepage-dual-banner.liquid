@@ -91,6 +91,12 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.8s ease;
+  }
+  
+  /* Hover Zoom */
+  .custom-dual-link:hover .custom-dual-image img {
+    transform: scale(1.05);
   }
   
   /* Overlay Gradient for Text Readability */
@@ -148,4 +154,70 @@
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    text-align: cent
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  /* Solid hover state (inverts the button) */
+  .custom-dual-link:hover .custom-dual-btn {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+  
+  /* Mobile Adjustments */
+  @media screen and (max-width: 749px) {
+    .custom-dual-banner-wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .custom-dual-text-content {
+      padding: 3rem 2rem; 
+    }
+    
+    .custom-dual-text-content .product__title {
+      font-size: 2.2rem !important;
+    }
+    
+    .custom-dual-btn {
+      min-width: 12rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Side-by-Side Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { 
+      "type": "checkbox", 
+      "id": "show_second_banner", 
+      "label": "Enable Side-by-Side (Two Banners)", 
+      "default": true,
+      "info": "Uncheck this to show only the first banner at full width."
+    },
+    { "type": "header", "content": "Left Banner (or Full Width)" },
+    { "type": "image_picker", "id": "image_1", "label": "Image" },
+    { "type": "text", "id": "title_1", "label": "Heading", "default": "WOMEN'S" },
+    { "type": "text", "id": "subtitle_1", "label": "Subtitle", "default": "EXPLORE THE LATEST" },
+    { "type": "text", "id": "button_label_1", "label": "Button Label", "default": "SHOP NOW" },
+    { "type": "url", "id": "link_1", "label": "Link" },
+    
+    { "type": "header", "content": "Right Banner" },
+    { "type": "image_picker", "id": "image_2", "label": "Image" },
+    { "type": "text", "id": "title_2", "label": "Heading", "default": "MEN'S" },
+    { "type": "text", "id": "subtitle_2", "label": "Subtitle", "default": "EXPLORE THE LATEST" },
+    { "type": "text", "id": "button_label_2", "label": "Button Label", "default": "SHOP NOW" },
+    { "type": "url", "id": "link_2", "label": "Link" }
+  ],
+  "presets": [
+    {
+      "name": "Side-by-Side Banner"
+    }
+  ]
+}
+{% endschema %}
